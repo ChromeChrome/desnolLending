@@ -160,12 +160,17 @@ header {
   background: #e9eef0;
   min-height: 274px;
   -webkit-box-sizing: content-box;
-          box-sizing: content-box; }
+          box-sizing: content-box;
+  padding-top: 50px; }
   .web-app-dev .web-app-dev__plarform .web-app-dev__plarform--title {
     padding-top: 50px;
     line-height: 40px; }
-  .web-app-dev .web-app-dev__plarform .web-app-dev__items {
-    padding-top: 50px; }
+  .web-app-dev .web-app-dev__plarform .web-app-dev__plarformItems {
+    width: 100%;
+    margin-top: 50px; }
+    .web-app-dev .web-app-dev__plarform .web-app-dev__plarformItems .web-app-dev__plarformItem {
+      display: inline-block;
+      width: 15%; }
 
 .get-mob-app {
   margin-top: 75px; }
