@@ -258,9 +258,24 @@ header {
 }
 
 .send-msg {
+    color: #fff;
     background: $clr_main;
-    .end-msg__title {
-        
+    .send-msg__title {
+        margin-top: 74px;
+        margin-bottom: 47px;
+    }
+    .send-msg__item {
+        .send-msg__item--img {
+            width: 85px;
+            height: 85px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            margin-bottom: 33px;
+        }
+        .send-msg__item--txt {
+            text-align: left;
+        }
     }
 }
 
