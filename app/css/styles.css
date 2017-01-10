@@ -225,6 +225,9 @@ header {
   font: 20px "Roboto-Medium", sans-serif;
   margin-bottom: 28px; }
 
+.send-msg {
+  background: #21ae78; }
+
 .possibilities-app {
   margin-top: 75px;
   background: #fff; }
