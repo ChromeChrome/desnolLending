@@ -251,7 +251,7 @@ header {
             color: $clr_main2;
         }
         .advantage__item--bottom {
-            padding-top: 19px;
+            padding: 19px 41px;
             font: 15px $fnt_rl;
         }
     }
@@ -283,10 +283,49 @@ header {
         margin-bottom: 28px;
     }
 }
-
+.corner{
+    z-index: 1;
+    overflow: hidden;
+    // position: relative;
+    padding-top: 30px;  
+    width: 100%;
+    margin-bottom: 4px;
+     
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 20px;
+        background: #21ae78;
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+        width: 50%;
+        -webkit-transform: rotate(1deg) translateY(6px);
+        -ms-transform: rotate(1deg) translateY(6px);
+        transform: rotate(1deg) translateY(11px);
+        z-index: 0;
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 20px;
+        background: $clr_main;
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+        width: 50%;
+        transform: rotate(359deg) translate(-1px,11px);
+        z-index: 0;
+        } 
+}
 .send-msg {
     color: #fff;
     background: $clr_main;
+    position: relative;
     .send-msg__title {
         margin-top: 74px;
         margin-bottom: 47px;
@@ -396,7 +435,16 @@ header {
         margin-bottom: 75px;
     }
 }
-
+.support_month{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: $fnt_rr;
+    font-size: 37px;
+    background:#fab31a;
+    color:#fff;
+    padding: 25px 13px 5px;
+}
 .discussion-ideas {
     @include background(discussion-ideas, png, center center, 360px, cover);
     .discussion-ideas__title {

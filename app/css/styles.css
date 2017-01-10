@@ -231,7 +231,7 @@ header {
     font: 20px "Roboto-Medium", sans-serif;
     color: #fab31a; }
   .advantage__items .advantage__item .advantage__item--bottom {
-    padding-top: 19px;
+    padding: 19px 41px;
     font: 15px "Roboto-Light", sans-serif; }
 
 .partners .parters-list {
@@ -268,9 +268,47 @@ header {
   font: 20px "Roboto-Medium", sans-serif;
   margin-bottom: 28px; }
 
+.corner {
+  z-index: 1;
+  overflow: hidden;
+  padding-top: 30px;
+  width: 100%;
+  margin-bottom: 4px; }
+  .corner:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    background: #21ae78;
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    width: 50%;
+    -webkit-transform: rotate(1deg) translateY(6px);
+    -ms-transform: rotate(1deg) translateY(6px);
+    transform: rotate(1deg) translateY(11px);
+    z-index: 0; }
+  .corner:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 20px;
+    background: #21ae78;
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    width: 50%;
+    -webkit-transform: rotate(359deg) translate(-1px, 11px);
+        -ms-transform: rotate(359deg) translate(-1px, 11px);
+            transform: rotate(359deg) translate(-1px, 11px);
+    z-index: 0; }
+
 .send-msg {
   color: #fff;
-  background: #21ae78; }
+  background: #21ae78;
+  position: relative; }
   .send-msg .send-msg__title {
     margin-top: 74px;
     margin-bottom: 47px; }
@@ -367,6 +405,16 @@ header {
     background: #fab31a;
     border: none;
     margin-bottom: 75px; }
+
+.support_month {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 37px;
+  background: #fab31a;
+  color: #fff;
+  padding: 25px 13px 5px; }
 
 .discussion-ideas {
   background: url(../images/discussion-ideas.png) no-repeat;
