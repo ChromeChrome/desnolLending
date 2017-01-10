@@ -48,6 +48,9 @@ a:hover {
   -webkit-border-radius: 5px;
           border-radius: 5px; }
 
+.text-center {
+  text-align: center; }
+
 .title {
   font: 37px "Roboto-Light", sans-serif;
   text-transform: uppercase;
@@ -241,24 +244,8 @@ header {
   padding-bottom: 34px; }
 
 .partners .partners-title {
-  position: absolute;
-  z-index: 1;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0%);
-      -ms-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: inline-block;
+  line-height: 65px !important;
   text-align: center;
   text-transform: uppercase;
   width: 230px;

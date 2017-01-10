@@ -22,7 +22,9 @@ a:hover {
     font-size: 16px;
     border-radius: 5px;
 }
-
+.text-center{
+    text-align: center;
+}
 .title {
     font: 37px $fnt_rl;
     text-transform: uppercase;
@@ -266,13 +268,8 @@ header {
     }
     
     .partners-title {
-        position: absolute;
-        z-index: 1;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: inline-block;
+        line-height: 65px!important;
         text-align: center;
         text-transform: uppercase;
         width: 230px;
