@@ -49,8 +49,8 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 
 gulp.task('js-libs', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
-		'app/libs/*.js'//, // Берем jQuery
-		//'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js' // Берем Magnific Popup
+		'app/libs/jquery-3.1.1.min.js', // Берем jQuery
+		'app/libs/bootstrap.min.js' // Берем Magnific Popup
 		])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		.pipe(uglify()) // Сжимаем JS файл
