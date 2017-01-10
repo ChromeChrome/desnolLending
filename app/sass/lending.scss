@@ -78,9 +78,11 @@ header {
     position: relative;
     .header-container {
         position: absolute;
-        display: block;
         text-align: center;
         z-index: 1;
+        left: 50%;
+        top: 0;
+        transform: translate(-55%,0);
     }
     video {
         width: 100%;
@@ -94,7 +96,9 @@ header {
     .main-slogan-wrap{
         position: absolute;
         display: block; 
-        top:50%; 
+        top:40%; 
+        left: 35%;
+        transform: translate(-40%, 40%);
         .main-slogan {  
             text-transform: uppercase;
             text-align: left;

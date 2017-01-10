@@ -60,9 +60,13 @@ header {
   position: relative; }
   header .header-container {
     position: absolute;
-    display: block;
     text-align: center;
-    z-index: 1; }
+    z-index: 1;
+    left: 50%;
+    top: 0;
+    -webkit-transform: translate(-55%, 0);
+        -ms-transform: translate(-55%, 0);
+            transform: translate(-55%, 0); }
   header video {
     width: 100%;
     display: block;
@@ -72,7 +76,11 @@ header {
 .main .main-slogan-wrap {
   position: absolute;
   display: block;
-  top: 50%; }
+  top: 40%;
+  left: 35%;
+  -webkit-transform: translate(-40%, 40%);
+      -ms-transform: translate(-40%, 40%);
+          transform: translate(-40%, 40%); }
   .main .main-slogan-wrap .main-slogan {
     text-transform: uppercase;
     text-align: left;
