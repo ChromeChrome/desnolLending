@@ -28,7 +28,7 @@ a:hover {
 .main-nav {
   display: inline-block;
   vertical-align: top;
-  padding: 27px; }
+  padding: 21px 27px 22px 29px; }
 
 .main-nav .main-nav__items {
   display: inline-block; }
@@ -46,15 +46,26 @@ a:hover {
   padding: 23px 0; }
   .main-nav .main-nav__item a {
     padding: 39px 25px;
-    color: #fff; }
+    color: #fff;
+    font: 16px "Roboto-Medium", sans-serif; }
     .main-nav .main-nav__item a:hover {
       background: #21ae78; }
 
 .contacts {
+  position: relative;
   display: inline-block;
   vertical-align: middle;
   text-align: left;
-  margin-left: 55px; }
+  margin-left: 55px;
+  font: 22px "Roboto-Light", sans-serif; }
+  .contacts:before {
+    position: absolute;
+    left: -31px;
+    top: 2px;
+    content: "";
+    height: 51px;
+    width: 1px;
+    background: #fab31a; }
 
 header {
   position: relative; }
@@ -76,7 +87,7 @@ header {
 .main .main-slogan-wrap {
   position: absolute;
   display: block;
-  top: 40%;
+  top: 27%;
   left: 35%;
   -webkit-transform: translate(-40%, 40%);
       -ms-transform: translate(-40%, 40%);
@@ -115,7 +126,7 @@ header {
   display: inline-block;
   vertical-align: top;
   margin-right: 29px;
-  width: 270px;
+  width: 23%;
   height: 250px;
   font: 15px "Roboto-Medium", sans-serif;
   color: #fff;

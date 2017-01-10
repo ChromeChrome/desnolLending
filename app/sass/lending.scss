@@ -33,7 +33,7 @@ a:hover {
 .main-nav {
     display: inline-block;
     vertical-align: top;
-    padding: 27px;
+    padding: 21px 27px 22px 29px;
 }
 
 .main-nav {
@@ -60,6 +60,7 @@ a:hover {
         a {
             padding: 39px 25px;
             color: #fff;
+            font: 16px $fnt_rm;
             &:hover {
                 background: $clr_main;
             }
@@ -68,10 +69,21 @@ a:hover {
 }
 
 .contacts {
+    position: relative;
     display: inline-block;
     vertical-align: middle;
     text-align: left;
     margin-left: 55px;
+    font: 22px $fnt_rl;
+    &:before {
+        position: absolute;
+        left: -31px;
+        top: 2px;
+        content: "";
+        height: 51px;
+        width: 1px;
+        background: $clr_main2;
+    }
 }
 
 header {
@@ -96,7 +108,7 @@ header {
     .main-slogan-wrap{
         position: absolute;
         display: block; 
-        top:40%; 
+        top: 27%; 
         left: 35%;
         transform: translate(-40%, 40%);
         .main-slogan {  
@@ -143,7 +155,8 @@ header {
         display: inline-block;
         vertical-align: top;
         margin-right: 29px;
-        width: 270px;
+        // width: 270px;
+        width: 23%;
         height: 250px;
         font: 15px $fnt_rm;
         color: #fff;
