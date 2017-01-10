@@ -240,16 +240,24 @@ header {
 
 .partners {
     .parters-list {
+        position: relative;
         border:2px solid $clr_main2;
         margin-bottom: 74px;
         padding-bottom: 34px;
     }
-
+    
     .partners-title {
-        display: inline-block;
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         text-transform: uppercase;
-        padding: 30px 27px;
+        width: 230px;
+        height: 65px;
         background: $clr_main2;
         color:#fff;
         font: 20px $fnt_rm;
