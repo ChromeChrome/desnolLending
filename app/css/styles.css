@@ -447,6 +447,64 @@ header {
       -ms-transform: translate(0, -25%);
           transform: translate(0, -25%); }
 
+.free-consultation {
+  background: url(../images/form-bg.jpg) no-repeat;
+  background-position: center center;
+  height: 478px;
+  background-size: contain;
+  max-width: 678px;
+  width: 100%;
+  margin: 4% auto;
+  padding-left: 56px; }
+  .free-consultation input:not([type="submit"]), .free-consultation textarea {
+    width: 337px;
+    border: 1px solid #c3c3c8;
+    padding-left: 20px;
+    color: #7c7c7c;
+    font: 13px "Roboto-Light", sans-serif; }
+  .free-consultation input:not([type="submit"]) {
+    height: 38px;
+    margin-bottom: 8px; }
+  .free-consultation textarea {
+    height: 90px;
+    margin-bottom: 14px;
+    padding-top: 14px; }
+  .free-consultation input:not([type="submit"])::-webkit-input-placeholder,
+  .free-consultation textarea::-webkit-input-placeholder {
+    font: 13px "Roboto-Light", sans-serif;
+    color: #7c7c7c; }
+  .free-consultation input[type="submit"] {
+    border: none;
+    background: #21ae78;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    width: 157px;
+    height: 52px;
+    color: #fff;
+    font: 16px "Roboto-Black", sans-serif; }
+  .free-consultation .free-consultation__txt--title {
+    padding-top: 43px;
+    margin-bottom: 25px;
+    color: #2c2c2c;
+    font: 26px "Roboto-Medium", sans-serif;
+    text-transform: uppercase;
+    text-align: left; }
+  .free-consultation .free-consultation__txt--descr {
+    color: #323232;
+    text-align: left;
+    font: 16px "Roboto-Light", sans-serif;
+    margin-bottom: 21px; }
+  .free-consultation .free-consultation__item .free-consultation__items--response {
+    margin-left: 23px;
+    text-transform: uppercase;
+    text-align: left;
+    font: 16px "Roboto-Medium", sans-serif;
+    color: #2c2c2c; }
+  .free-consultation .free-consultation__item .free-consultation__items--btn {
+    display: inline-block; }
+
 .footer {
   border-top: 1px solid #dde0e4;
   padding-top: 38px;

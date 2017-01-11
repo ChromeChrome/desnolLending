@@ -1,6 +1,6 @@
 $(function () {
     /*
-    *   Buton scroll top
+        * Buton scroll top
     */
     $(window).scroll(function () {
 
@@ -18,16 +18,6 @@ $(function () {
             scrollTop: $($(this).data("href")).offset().top - 159
         }, 500);
     });
-
-    /*
-        * Flex slider
-    */
-    $('.flexslider').flexslider({
-        animation: "slide",
-        animationLoop: false,
-        itemWidth: 210,
-        itemMargin: 5
-    }); 
 
     /*
         * Form send
