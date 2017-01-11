@@ -21,7 +21,7 @@ $(function () {
 
     $('.flexslider').flexslider({
         animation: "slide",
-        animationLoop: false,
+        animationLoop: true,
         itemMax:1,
         controlNav:false,
         prevText:"",
