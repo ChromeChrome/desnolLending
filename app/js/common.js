@@ -22,11 +22,10 @@ $(function () {
     /*
         * Flex slider
     */
-    $('.flexslider').flexslider({
+    $('.slider2').flexslider({
         animation: "slide",
         animationLoop: false,
         itemWidth: 210,
         itemMargin: 5
-    });
-    
+    });  
 })
