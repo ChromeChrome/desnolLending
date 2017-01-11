@@ -22,6 +22,13 @@ a:hover {
     font-size: 16px;
     border-radius: 5px;
 }
+.btn-top {
+    display: none;
+    position: fixed;
+    top: 50%;
+    right: 7%;
+    z-index: 1;
+}
 .text-center{
     text-align: center;
 }
@@ -39,10 +46,21 @@ a:hover {
 }
 
 .main-nav {
+    padding: 23px 0;
     .main-nav__items {
         display: inline-block;
         .main-nav__item {
             display: inline;
+        }
+    }
+    .main-nav__item {
+        a {
+            padding: 39px 25px;
+            color: #fff;
+            font: 16px $fnt_rm;
+            &:hover {
+                background: $clr_main;
+            }
         }
     }
 }
@@ -53,20 +71,6 @@ a:hover {
     img {
         display: inline-block;
         vertical-align: middle;
-    }
-}
-
-.main-nav {
-    padding: 23px 0;
-    .main-nav__item {
-        a {
-            padding: 39px 25px;
-            color: #fff;
-            font: 16px $fnt_rm;
-            &:hover {
-                background: $clr_main;
-            }
-        }
     }
 }
 

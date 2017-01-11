@@ -19,6 +19,13 @@ a:hover {
   -webkit-border-radius: 5px;
           border-radius: 5px; }
 
+.btn-top {
+  display: none;
+  position: fixed;
+  top: 50%;
+  right: 7%;
+  z-index: 1; }
+
 .text-center {
   text-align: center; }
 
@@ -33,10 +40,18 @@ a:hover {
   vertical-align: top;
   padding: 21px 27px 22px 29px; }
 
-.main-nav .main-nav__items {
-  display: inline-block; }
-  .main-nav .main-nav__items .main-nav__item {
-    display: inline; }
+.main-nav {
+  padding: 23px 0; }
+  .main-nav .main-nav__items {
+    display: inline-block; }
+    .main-nav .main-nav__items .main-nav__item {
+      display: inline; }
+  .main-nav .main-nav__item a {
+    padding: 39px 25px;
+    color: #fff;
+    font: 16px "Roboto-Medium", sans-serif; }
+    .main-nav .main-nav__item a:hover {
+      background: #21ae78; }
 
 .header-logo {
   background: #1e1e1e;
@@ -44,15 +59,6 @@ a:hover {
   .header-logo img {
     display: inline-block;
     vertical-align: middle; }
-
-.main-nav {
-  padding: 23px 0; }
-  .main-nav .main-nav__item a {
-    padding: 39px 25px;
-    color: #fff;
-    font: 16px "Roboto-Medium", sans-serif; }
-    .main-nav .main-nav__item a:hover {
-      background: #21ae78; }
 
 .contacts {
   position: relative;
