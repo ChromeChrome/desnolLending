@@ -25,7 +25,7 @@ $(function () {
         itemMax:1,
         controlNav:false,
         prevText:"",
-        nextText:" "
+        nextText:""
     }); 
 
      function feedbackSend( formSend, nameField, emailField, phoneField, messageFields ){
