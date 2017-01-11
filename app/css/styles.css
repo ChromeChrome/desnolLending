@@ -518,6 +518,17 @@ header {
     font: 16px "Roboto-Regular", sans-serif;
     text-align: center; }
 
+/*
+    * slider 2
+*/
+.flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: .7;
+  left: 0px; }
+
+.flexslider:hover .flex-direction-nav .flex-next {
+  opacity: .7;
+  right: 0px; }
+
 .slider-2 {
   margin: 0 auto;
   max-width: 772px;
@@ -529,21 +540,39 @@ header {
 
 .slider-2 .flex-prev:before {
   content: "";
-  background: url(../images/slider-2-next.png) 0 0 no-repeat;
-  width: 183px;
+  background: url(../images/slider-2-prev.png) 0 0 no-repeat;
+  width: 22px;
   height: 181px;
   position: absolute;
   top: -72px;
-  left: 19px; }
+  left: 0px; }
+
+.slider-2 .flex-next:before {
+  content: "";
+  background: url(../images/slider-2-next.png) 0 0 no-repeat;
+  width: 22px;
+  height: 181px;
+  position: absolute;
+  top: -72px;
+  right: 0px; }
+
+.slider-2 .flex-direction-nav .flex-prev, .slider-2 .flex-direction-nav .flex-next,
+.slider-2 .flex-direction-nav .flex-prev:hover, .slider-2 .flex-direction-nav .flex-next:hover {
+  opacity: 1; }
 
 .slider-2 .flex-direction-nav .flex-next {
-  right: -20px; }
+  right: 0px; }
 
 .slider-2 .flex-direction-nav .flex-prev {
-  left: -18px; }
+  left: 0px; }
 
 .slider2__item--txt {
-  padding-top: 10%; }
+  padding-top: 8%;
+  font: 18px "Roboto-Light", sans-serif; }
+
+.slider2__item--bold {
+  font: 18px "Roboto-Black", sans-serif;
+  text-transform: uppercase; }
 
 .slider2__item--img {
   text-align: center; }

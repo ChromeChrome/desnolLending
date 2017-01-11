@@ -1,11 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="74.32" height="74.28" viewBox="0 0 74.32 74.28">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #484848;
-        fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <path id="_" data-name="" class="cls-1" d="M1115.86,1783.34v24.87l30.44,4.19v-29.06h-30.44Zm0-28.97v25.22h30.44v-29.42Zm33.79,28.97v29.51l40.49,5.58v-35.09h-40.49Zm0-33.62v29.87h40.49v-35.45Z" transform="translate(-1115.84 -1744.16)"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="74.32" height="74.28" viewBox="0 0 74.32 74.28"><defs><style>.cls-1{fill:#484848;fill-rule:evenodd}</style></defs><path id="_" data-name="" class="cls-1" d="M1115.86 1783.34v24.87l30.44 4.19v-29.06h-30.44zm0-28.97v25.22h30.44v-29.42zm33.79 28.97v29.51l40.49 5.58v-35.09h-40.49zm0-33.62v29.87h40.49v-35.45z" transform="translate(-1115.84 -1744.16)"/></svg>

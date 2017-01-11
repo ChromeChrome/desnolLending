@@ -31,7 +31,7 @@ $(function () {
      function feedbackSend( formSend, nameField, emailField, phoneField, messageFields ){
         $(formSend).submit(function (event) {
             event.preventDefault();
-
+            console.log(11111);
             var arrField    = [$(nameField), $(emailField), $(phoneField), $(messageFields)],
                 cntNotNull  = 0;
 
