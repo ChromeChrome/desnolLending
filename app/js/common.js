@@ -27,7 +27,10 @@ $(function () {
     $('.flexslider').flexslider({
         animation: "slide",
         animationLoop: false,
-        itemMax:1
+        itemMax:1,
+        controlNav:false,
+        prevText:"",
+        nextText:""
     }); 
 
     /*
