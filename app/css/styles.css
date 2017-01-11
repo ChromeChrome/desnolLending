@@ -496,14 +496,15 @@ header {
     text-align: left;
     font: 16px "Roboto-Light", sans-serif;
     margin-bottom: 21px; }
-  .free-consultation .free-consultation__item .free-consultation__items--response {
+  .free-consultation .free-consultation__item .free-consultation__item--btn, .free-consultation .free-consultation__item .free-consultation__items--response {
+    display: inline-block; }
+  .free-consultation .free-consultation__item .free-consultation__item--response {
+    vertical-align: middle;
     margin-left: 23px;
     text-transform: uppercase;
     text-align: left;
     font: 16px "Roboto-Medium", sans-serif;
     color: #2c2c2c; }
-  .free-consultation .free-consultation__item .free-consultation__items--btn {
-    display: inline-block; }
 
 .footer {
   border-top: 1px solid #dde0e4;

@@ -534,15 +534,16 @@ header {
         margin-bottom: 21px;
     }
     .free-consultation__item {
-        .free-consultation__items--response {
+        .free-consultation__item--btn, .free-consultation__items--response {
+            display: inline-block;
+        }
+        .free-consultation__item--response {
+            vertical-align: middle;
             margin-left: 23px;
             text-transform: uppercase;
             text-align: left;
             font: 16px $fnt_rm;
             color: #2c2c2c;
-        }
-        .free-consultation__items--btn {
-            display: inline-block;
         }
     }
 }
