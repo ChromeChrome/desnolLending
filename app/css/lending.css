@@ -502,10 +502,10 @@ header {
   background: #fff;
   position: relative;
   left: 5px;
-  top: -8px;
+  top: -9px;
   -webkit-transform: rotate(-24deg);
   -ms-transform: rotate(-24deg);
-  transform: rotate(-26deg); }
+  transform: rotate(-36deg); }
 
 .slider-2 .flex-prev:after {
   content: "";

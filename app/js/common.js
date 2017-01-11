@@ -19,24 +19,15 @@ $(function () {
         }, 500);
     });
 
-    /*
-<<<<<<< HEAD
-=======
-        * Flex slider
-    */
     $('.flexslider').flexslider({
         animation: "slide",
         animationLoop: false,
         itemMax:1,
         controlNav:false,
         prevText:"",
-        nextText:""
+        nextText:" "
     }); 
 
-    /*
->>>>>>> 8659a14058c9ac128a8c77ed27f488121b3aa436
-        * Form send
-    */ 
      function feedbackSend( formSend, nameField, emailField, phoneField, messageFields ){
         $(formSend).submit(function (event) {
             event.preventDefault();
