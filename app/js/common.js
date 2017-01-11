@@ -36,20 +36,20 @@ $(function () {
         $(formSend).submit(function (event) {
             event.preventDefault();
 
-            var arrField    = [$(formSend), $(nameField), $(emailField), $(phoneField)],
+            var arrField    = [$(nameField), $(emailField), $(phoneField), $(messageFields)],
                 cntNotNull  = 0;
 
             $.each( arrField, function( i , e ){
-                if( e.val() != null || e.val() != ""){
-                    cntNotNull ++;
+                if( $(e).val() != null && $(e).val() != "" && $(e).val() != undefined ){
+                    cntNotNull++;
                 }
                 console.log( e.val() );
             })
             console.log(cntNotNull);
-            if ( cntNotNull >= 3 ){ 
+            if ( cntNotNull >= 4 ){ 
                 var dataSend = $(formSend).serialize();
 
-                $.post("../feedback.php", {
+                $.post("feedback.php", {
                     data:{
                         "dataSend":dataSend
                     }
