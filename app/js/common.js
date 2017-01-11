@@ -25,11 +25,7 @@ $(function () {
     $('.flexslider').flexslider({
         animation: "slide",
         animationLoop: false,
-        minItems:1,
-        maxItem:1,
-        prevText: "<",
-        nextText: ">"
-        // controlsContainer: $(".custom-controls-container"),
-        // customDirectionNav: $(".custom-navigation a")
+        itemWidth: 210,
+        itemMargin: 5
     });  
 })
