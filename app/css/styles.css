@@ -248,6 +248,12 @@ header {
   border: 2px solid #fab31a;
   margin-bottom: 74px;
   padding-bottom: 34px; }
+  .partners .parters-list__item {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 15px 0; }
 
 .partners .partners-title {
   display: inline-block;
