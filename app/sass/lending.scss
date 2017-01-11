@@ -115,8 +115,7 @@ header {
         position: absolute;
         display: block; 
         top: 27%; 
-        left: 35%;
-        transform: translate(-40%, 40%);
+        transform: translate(46%, 50%);
         .main-slogan {  
             text-transform: uppercase;
             text-align: left;
@@ -368,6 +367,13 @@ header {
             max-width: 472px;
             width: 100%;
             height: 354px;
+            padding-bottom: 4px;
+        }
+        &:nth-child(9),&:nth-child(10),
+        &:nth-child(11),&:nth-child(12) {
+            img {
+                padding-bottom: 0;
+            }
         }
         .possibilities-app__item--txt {
             display: flex;
