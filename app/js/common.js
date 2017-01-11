@@ -27,5 +27,52 @@ $(function () {
         animationLoop: false,
         itemWidth: 210,
         itemMargin: 5
-    });  
+    }); 
+
+    /*
+        * Form send
+    */ 
+     function feedbackSend( formSend, nameField, emailField, phoneField, messageFields ){
+        $(formSend).submit(function (event) {
+            event.preventDefault();
+
+            var arrField    = [$(formSend), $(nameField), $(emailField), $(phoneField)],
+                cntNotNull  = 0;
+
+            $.each( arrField, function( i , e ){
+                if( e.val() != null || e.val() != ""){
+                    cntNotNull ++;
+                }
+                console.log( e.val() );
+            })
+            console.log(cntNotNull);
+            if ( cntNotNull >= 3 ){ 
+                var dataSend = $(formSend).serialize();
+
+                $.post("../feedback.php", {
+                    data:{
+                        "dataSend":dataSend
+                    }
+                },
+                function (data) {
+                    console.log(data);
+                    //$(nameModal).modal('hide');
+                    setTimeout(
+                        function(){
+                            $("#thank").modal('hide');
+                            $("#thankSpecial").modal('hide');
+                            $(formSend).trigger('reset');
+                        }, 2000
+                    );
+                })
+            }
+            return false;
+        });
+    }
+
+    feedbackSend(
+        ".block-form__form>form","input[name='nameGuest']",
+        "input[name='emailGuest']", "input[name='phoneGuest']",
+        "input[name='msgTask']"
+    );
 })
