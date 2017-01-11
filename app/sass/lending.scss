@@ -412,6 +412,7 @@ header {
     .block-form__form {
         input[type="text"],
         textarea {
+            color: #a7a7a7;
             width: 570px;
             background: #313a3d;
             border: none;
@@ -425,7 +426,6 @@ header {
         textarea:-webkit-input-placeholder {
             font: 16px $fnt_rl;
             color: #a7a7a7;
-            text-align: left;
             text-transform: uppercase;
         }
         textarea {

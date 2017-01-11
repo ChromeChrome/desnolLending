@@ -286,10 +286,10 @@
             <div class="row">
                 <div class="block-form__form">
                     <form action="" class="center-block text-center">
-                        <input type="text" placeholder="Имя"><br>
-                        <input type="text" placeholder="E-mail"><br>
-                        <input type="text" placeholder="Телефон"><br>
-                        <textarea name="" placeholder="Краткая постановка задачи/вопрос">
+                        <input name="nameGuest" type="text" placeholder="Имя" required><br>
+                        <input name="email" type="text" placeholder="E-mail" required><br>
+                        <input name="phoneGuest" type="text" placeholder="Телефон" minlength="6" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" required><br>
+                        <textarea name="msgTask" placeholder="Краткая постановка задачи/вопрос" required>
                         </textarea><br>
                         <input class="btn" type="submit">
                     </form>

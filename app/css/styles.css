@@ -383,6 +383,7 @@ header {
     font: 20px "Roboto-Medium", sans-serif; }
   .block-form .block-form__form input[type="text"],
   .block-form .block-form__form textarea {
+    color: #a7a7a7;
     width: 570px;
     background: #313a3d;
     border: none;
@@ -394,7 +395,6 @@ header {
   .block-form .block-form__form textarea:-webkit-input-placeholder {
     font: 16px "Roboto-Light", sans-serif;
     color: #a7a7a7;
-    text-align: left;
     text-transform: uppercase; }
   .block-form .block-form__form textarea {
     margin-bottom: 21px;
