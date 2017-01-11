@@ -431,6 +431,15 @@ header {
     line-height: 52px;
     font-family: "Roboto-Black", sans-serif; }
 
+.slider-laptop .slider-laptop__items {
+  background: url(../images/laptop.png) no-repeat;
+  background-position: center center;
+  height: 530px;
+  background-size: contain;
+  -webkit-transform: translate(0, -25%);
+      -ms-transform: translate(0, -25%);
+          transform: translate(0, -25%); }
+
 .footer {
   border-top: 1px solid #dde0e4;
   padding-top: 38px;

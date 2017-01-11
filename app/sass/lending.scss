@@ -468,6 +468,13 @@ header {
     }
 }
 
+.slider-laptop {
+    .slider-laptop__items {
+        @include background(laptop, png, center center, 530px, contain); 
+        transform: translate(0,-25%);
+    }
+}
+
 .footer {
     border-top: 1px solid #dde0e4;
     padding-top: 38px;
