@@ -49,8 +49,9 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 
 gulp.task('js-libs', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
-		'app/libs/jquery-3.1.1.min.js', // Берем jQuery
-		'app/libs/bootstrap.min.js' // Берем Magnific Popup
+			'app/libs/jquery-3.1.1.min.js', // Берем jQuery
+			'app/libs/bootstrap.min.js', // Берем Magnific Popup
+			'app/libs/jquery.flexslider-min.js'
 		])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		.pipe(uglify()) // Сжимаем JS файл
@@ -58,7 +59,10 @@ gulp.task('js-libs', function() {
 });
 
 gulp.task('css-libs', ['sass'], function() {
-	return gulp.src('app/css/libs.css') // Выбираем файл для минификации
+	return gulp.src([
+		'app/css/libs/bootstrap.min.css', // Берем bootstrap
+		'app/css/libs/flexslider.css' // Берем flexslider
+	]) // Выбираем файл для минификации
 		.pipe(cssnano()) // Сжимаем
 		.pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
 		.pipe(gulp.dest('app/css')); // Выгружаем в папку app/css

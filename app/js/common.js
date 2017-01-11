@@ -22,7 +22,7 @@ $(function () {
     /*
         * Flex slider
     */
-    $('.slider2').flexslider({
+    $('.flexslider').flexslider({
         animation: "slide",
         animationLoop: false,
         itemWidth: 210,
