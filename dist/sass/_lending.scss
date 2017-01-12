@@ -22,10 +22,8 @@ a:hover {
     color: #fff;
     font-size: 16px;
     border-radius: 5px;
-    &:active, &:focus, &:hover {
-        text-decoration: none;
+    &:active, &:focus {
         outline: none;
-        color: #fff;
     }
 }
 .btn-top {
@@ -594,11 +592,8 @@ header {
 .slider-laptop {
     .slider-1 {
         position: absolute;
-        top: 2%;
-        left: 28%;
         margin: 0 auto;
         max-width: 628px;
-        width: 100%;
         max-height: 398px;
         overflow: hidden;
         margin-top: 50px;

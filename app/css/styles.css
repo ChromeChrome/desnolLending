@@ -47,6 +47,10 @@ a:hover {
   font-size: 16px;
   -webkit-border-radius: 5px;
           border-radius: 5px; }
+  .btn:active, .btn:focus, .btn:hover {
+    text-decoration: none;
+    outline: none;
+    color: #fff; }
 
 .btn-top {
   display: none;
@@ -441,6 +445,7 @@ header {
     font-family: "Roboto-Black", sans-serif; }
 
 .slider-laptop .slider-laptop__items {
+  position: relative;
   background: url(../images/laptop.png) no-repeat;
   background-position: center center;
   height: 530px;
@@ -450,6 +455,7 @@ header {
           transform: translate(0, -25%); }
 
 .free-consultation {
+  position: relative;
   background: url(../images/form-bg.jpg) no-repeat;
   background-position: center center;
   height: 478px;
@@ -458,6 +464,18 @@ header {
   width: 100%;
   margin: 4% auto;
   padding-left: 56px; }
+  .free-consultation .free-consultation--close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #21ae78;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 34px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer; }
   .free-consultation input:not([type="submit"]), .free-consultation textarea {
     width: 337px;
     border: 1px solid #c3c3c8;
@@ -498,7 +516,7 @@ header {
     text-align: left;
     font: 16px "Roboto-Light", sans-serif;
     margin-bottom: 21px; }
-  .free-consultation .free-consultation__item .free-consultation__item--btn, .free-consultation .free-consultation__item .free-consultation__items--response {
+  .free-consultation .free-consultation__item .free-consultation__item--btn, .free-consultation .free-consultation__item .free-consultation__item--response {
     display: inline-block; }
   .free-consultation .free-consultation__item .free-consultation__item--response {
     vertical-align: middle;
@@ -519,17 +537,32 @@ header {
     text-align: center; }
 
 /*
+    *flexslider slider-laptop
+*/
+.slider-laptop .slider-1 {
+  position: absolute;
+  top: 2%;
+  left: 28%;
+  margin: 0 auto;
+  max-width: 628px;
+  width: 100%;
+  max-height: 398px;
+  overflow: hidden;
+  margin-top: 50px;
+  border: none; }
+
+/*
     * slider 2
 */
-.flexslider:hover .flex-direction-nav .flex-prev {
+.get-mob-app .flexslider:hover .flex-direction-nav .flex-prev {
   opacity: .7;
   left: 0px; }
 
-.flexslider:hover .flex-direction-nav .flex-next {
+.get-mob-app .flexslider:hover .flex-direction-nav .flex-next {
   opacity: .7;
   right: 0px; }
 
-.slider-2 {
+.get-mob-app .slider-2 {
   margin: 0 auto;
   max-width: 772px;
   max-height: 182px;
@@ -538,7 +571,7 @@ header {
   overflow: hidden;
   margin-top: 50px; }
 
-.slider-2 .flex-prev:before {
+.get-mob-app .slider-2 .flex-prev:before {
   content: "";
   background: url(../images/slider-2-prev.png) 0 0 no-repeat;
   width: 22px;
@@ -547,7 +580,7 @@ header {
   top: -72px;
   left: 0px; }
 
-.slider-2 .flex-next:before {
+.get-mob-app .slider-2 .flex-next:before {
   content: "";
   background: url(../images/slider-2-next.png) 0 0 no-repeat;
   width: 22px;
@@ -556,26 +589,26 @@ header {
   top: -72px;
   right: 0px; }
 
-.slider-2 .flex-direction-nav .flex-prev, .slider-2 .flex-direction-nav .flex-next,
-.slider-2 .flex-direction-nav .flex-prev:hover, .slider-2 .flex-direction-nav .flex-next:hover {
+.get-mob-app .slider-2 .flex-direction-nav .flex-prev, .get-mob-app .slider-2 .flex-direction-nav .flex-next,
+.get-mob-app .slider-2 .flex-direction-nav .flex-prev:hover, .get-mob-app .slider-2 .flex-direction-nav .flex-next:hover {
   opacity: 1; }
 
-.slider-2 .flex-direction-nav .flex-next {
+.get-mob-app .slider-2 .flex-direction-nav .flex-next {
   right: 0px; }
 
-.slider-2 .flex-direction-nav .flex-prev {
+.get-mob-app .slider-2 .flex-direction-nav .flex-prev {
   left: 0px; }
 
-.slider2__item--txt {
+.get-mob-app .slider2__item--txt {
   padding-top: 8%;
   font: 18px "Roboto-Light", sans-serif; }
 
-.slider2__item--bold {
+.get-mob-app .slider2__item--bold {
   font: 18px "Roboto-Black", sans-serif;
   text-transform: uppercase; }
 
-.slider2__item--img {
+.get-mob-app .slider2__item--img {
   text-align: center; }
-  .slider2__item--img img {
+  .get-mob-app .slider2__item--img img {
     display: inline-block !important;
     width: auto !important; }

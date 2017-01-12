@@ -63,8 +63,9 @@ gulp.task('css-libs', ['sass'], function() {
 		'app/css/libs/bootstrap.min.css', // Берем bootstrap
 		'app/css/libs/flexslider.css' // Берем flexslider
 	]) // Выбираем файл для минификации
+		.pipe(concat('libs.min.css'))
 		.pipe(cssnano()) // Сжимаем
-		.pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
+		//.pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
 		.pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
 });
 
