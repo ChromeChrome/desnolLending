@@ -54,14 +54,12 @@ $(function () {
             if ( cntNotNull >= 4 ){ 
                 var dataSend = $(formSend).serialize();
 
-                $.post("feedback.php", {
-                    data:{
-                        "dataSend":dataSend
-                    }
-                },
+                $.post("feedback.php",
+                    {
+                        "data":dataSend
+                    },
                 function (data) {
-                    console.log(data);
-                    //$(nameModal).modal('hide');
+                    console.log(data); 
                     setTimeout(
                         function(){
                             $("#thank").modal('hide');
@@ -78,6 +76,6 @@ $(function () {
     feedbackSend(
         ".block-form__form>form","input[name='nameGuest']",
         "input[name='emailGuest']", "input[name='phoneGuest']",
-        "input[name='msgTask']"
+        "textarea[name='msgTask']"
     );
 })

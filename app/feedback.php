@@ -1,7 +1,7 @@
 <?php
-$data = stripslashes(strip_tags($_POST["data"]["dataSend"]));
-$formPage = stripslashes(strip_tags($_POST["data"]["formPage"]));
-
+$data = stripslashes(strip_tags($_POST["data"]));
+// $formPage = stripslashes(strip_tags($_POST["data"]));
+print_r($_POST["data"]);
 parse_str($data, $userData);
 
 function handler_mail($name, $phone, $email, $txt, $form, $formPage){
