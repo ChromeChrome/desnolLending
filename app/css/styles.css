@@ -685,7 +685,10 @@ header {
         display: inline-block;
         width: 100%;
         padding-top: 10px;
-        padding-bottom: 10px; } }
+        padding-bottom: 10px; }
+  .free-consultation {
+    background-size: cover;
+    padding-left: 10px; } }
 
 @media (max-width: 462px) {
   .main .main-slogan-wrap {
@@ -696,3 +699,12 @@ header {
     display: inline-block;
     max-width: 294px;
     line-height: 0; } }
+
+@media (max-width: 410px) {
+  .free-consultation {
+    background-size: cover;
+    padding-left: 0px;
+    height: auto;
+    padding-bottom: 20px; }
+    .free-consultation input[type="text"], .free-consultation input[type="email"], .free-consultation textarea {
+      width: 100%; } }
