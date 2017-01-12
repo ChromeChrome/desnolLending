@@ -672,6 +672,21 @@ header {
     height: 792px;
     background-size: cover; } }
 
+@media (max-width: 767px) {
+  .web-app-dev .web-app-dev__plarform {
+    margin-top: 0; }
+    .web-app-dev .web-app-dev__plarform .web-app-dev__plarform--title {
+      padding-top: 0; }
+    .web-app-dev .web-app-dev__plarform .web-app-dev__plarformItems {
+      width: 100%;
+      margin-top: 29px;
+      padding-bottom: 29px; }
+      .web-app-dev .web-app-dev__plarform .web-app-dev__plarformItems .web-app-dev__plarformItem {
+        display: inline-block;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px; } }
+
 @media (max-width: 462px) {
   .main .main-slogan-wrap {
     -webkit-transform: translate(1%, 36%);
