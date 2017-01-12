@@ -22,16 +22,18 @@ $(function () {
     /*
         * Flexslider
      */
-    $('.slider-2').flexslider({
+
+    
+    $('.slider-1').flexslider({
         animation: "slide",
-        animationLoop: true,
+        animationLoop: false,
         itemMax:1,
         controlNav:false,
-        prevText:"",
-        nextText:""
+        prevText:"111111111",
+        nextText:"22222222222"
     }); 
 
-    $('.slider-1').flexslider({
+    $('.slider-2').flexslider({
         animation: "slide",
         animationLoop: true,
         itemMax:1,
