@@ -19,6 +19,9 @@ $(function () {
         }, 500);
     });
 
+    /*
+        * Flexslider
+     */
     $('.slider-2').flexslider({
         animation: "slide",
         animationLoop: true,
@@ -33,10 +36,13 @@ $(function () {
         animationLoop: true,
         itemMax:1,
         controlNav:false,
-        prevText:"1212",
-        nextText:"1212121"
+        prevText:"",
+        nextText:""
     }); 
 
+    /*
+        * Feedback form
+     */
      function feedbackSend( formSend, nameField, emailField, phoneField, messageFields ){
         $(formSend).submit(function (event) {
             event.preventDefault();

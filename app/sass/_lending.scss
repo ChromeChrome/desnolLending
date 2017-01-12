@@ -604,8 +604,15 @@ header {
         margin-top: 50px;
         border: none;
     }
-   
-    .slides li {}
+    .slider-1 .flex-prev:before{
+        content: "";
+        background: url(../images/slider-2-next.png) 0 0 no-repeat;
+        width: 22px;
+        height: 181px;
+        position: absolute;
+        top: -72px;
+        right: 0px;
+    }
 }
 /*
     * slider 2
