@@ -609,8 +609,8 @@ header {
         color: #8e8e8e;
         font: 16px $fnt_rr;
         text-align: center;
-        a[href^="tel:"], a[href^="mailto:"] {
-            color: #fff;
+        a {
+            color: #8e8e8e;
         }
     }
 }

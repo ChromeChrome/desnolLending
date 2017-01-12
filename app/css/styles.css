@@ -551,8 +551,8 @@ header {
     color: #8e8e8e;
     font: 16px "Roboto-Regular", sans-serif;
     text-align: center; }
-    .footer .footer__txt a[href^="tel:"], .footer .footer__txt a[href^="mailto:"] {
-      color: #fff; }
+    .footer .footer__txt a {
+      color: #8e8e8e; }
 
 .slider-laptop .slider-1 {
   margin: 0 auto;
