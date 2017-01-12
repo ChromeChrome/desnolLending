@@ -653,9 +653,9 @@ header {
 */
 @media (max-width: 1440px) {
   .main .main-slogan-wrap {
-    -webkit-transform: translate(11%, 50%);
-        -ms-transform: translate(11%, 50%);
-            transform: translate(11%, 50%); }
+    -webkit-transform: translate(11%, 40%);
+        -ms-transform: translate(11%, 40%);
+            transform: translate(11%, 40%); }
   .possibilities-app .possibilities-app__item img {
     max-width: 420px; } }
 
@@ -687,6 +687,8 @@ header {
     border: none; } }
 
 @media (max-width: 830px) {
+  body {
+    overflow: hidden; }
   .main .main-slogan-wrap {
     -webkit-transform: translate(1%, 50%);
         -ms-transform: translate(1%, 50%);
@@ -729,6 +731,19 @@ header {
     background-size: cover;
     padding-left: 10px; } }
 
+@media (max-width: 750px) {
+  .slider-laptop .slider-1 {
+    margin-top: 5%; }
+  .slider-laptop .slider-laptop__items {
+    background-position: top center; } }
+
+@media (max-width: 500px) {
+  .slider-laptop .slider-1 .flex-caption {
+    top: 0;
+    font-size: 14px; }
+  .slider-laptop .slider-laptop__items {
+    height: 300px; } }
+
 @media (max-width: 462px) {
   .main .main-slogan-wrap {
     -webkit-transform: translate(1%, 36%);
@@ -737,7 +752,8 @@ header {
   .main .btn {
     display: inline-block;
     max-width: 294px;
-    line-height: 0; } }
+    line-height: 2;
+    height: 62px; } }
 
 @media (max-width: 410px) {
   .free-consultation {
