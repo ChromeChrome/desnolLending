@@ -29,6 +29,12 @@
     }
 }
 
+@media ( max-width: 1160px ){
+    .slider-laptop .slider-laptop__items {
+        transform: translate(0, 0%);
+    }
+}
+
 @media( max-width: 991px ){
     .web-app-dev { 
         .web-app-dev__item {

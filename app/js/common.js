@@ -26,7 +26,7 @@ $(function () {
     
     $('.slider-1').flexslider({
         animation: "fade",
-        animationLoop: false,
+        animationLoop: true,
         itemMax:1,
         controlNav:false,
         prevText:"",
