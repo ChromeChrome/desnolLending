@@ -668,7 +668,8 @@ header {
     width: 100%; }
   .partners .partners-list__item {
     width: 100%; }
-  .block-form .block-form__form input[type="text"], .block-form .block-form__form textarea {
+  .block-form .block-form__form input[type="text"], .block-form .block-form__form input[type="email"],
+  .block-form .block-form__form input[type="submit"], .block-form .block-form__form textarea {
     width: 100%; } }
 
 @media (max-width: 830px) {
@@ -696,6 +697,24 @@ header {
     height: 792px;
     background-size: cover; } }
 
+@media (max-width: 767px) {
+  .web-app-dev .web-app-dev__plarform {
+    margin-top: 0; }
+    .web-app-dev .web-app-dev__plarform .web-app-dev__plarform--title {
+      padding-top: 0; }
+    .web-app-dev .web-app-dev__plarform .web-app-dev__plarformItems {
+      width: 100%;
+      margin-top: 29px;
+      padding-bottom: 29px; }
+      .web-app-dev .web-app-dev__plarform .web-app-dev__plarformItems .web-app-dev__plarformItem {
+        display: inline-block;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px; }
+  .free-consultation {
+    background-size: cover;
+    padding-left: 10px; } }
+
 @media (max-width: 462px) {
   .main .main-slogan-wrap {
     -webkit-transform: translate(1%, 36%);
@@ -705,3 +724,12 @@ header {
     display: inline-block;
     max-width: 294px;
     line-height: 0; } }
+
+@media (max-width: 410px) {
+  .free-consultation {
+    background-size: cover;
+    padding-left: 0px;
+    height: auto;
+    padding-bottom: 20px; }
+    .free-consultation input[type="text"], .free-consultation input[type="email"], .free-consultation textarea {
+      width: 100%; } }
