@@ -643,7 +643,8 @@ header {
     width: 100%; }
   .partners .partners-list__item {
     width: 100%; }
-  .block-form .block-form__form input[type="text"], .block-form .block-form__form textarea {
+  .block-form .block-form__form input[type="text"], .block-form .block-form__form input[type="email"],
+  .block-form .block-form__form input[type="submit"], .block-form .block-form__form textarea {
     width: 100%; } }
 
 @media (max-width: 830px) {
