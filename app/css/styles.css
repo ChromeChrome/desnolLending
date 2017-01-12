@@ -37,6 +37,12 @@ a:hover {
   cursor: pointer;
   color: #fff; }
 
+a[href^="tel:"], a[href^="mailto:"] {
+  color: #fab31a;
+  cursor: pointer; }
+  a[href^="tel:"]:active, a[href^="tel:"]:focus, a[href^="mailto:"]:active, a[href^="mailto:"]:focus {
+    text-decoration: none; }
+
 .clr-black {
   color: #000 !important; }
 
@@ -126,6 +132,8 @@ header {
     -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0); }
+    header .header-container a[href^="tel:"], header .header-container a[href^="mailto:"] {
+      color: #fab31a; }
   header video {
     width: 100%;
     display: block;
@@ -543,6 +551,8 @@ header {
     color: #8e8e8e;
     font: 16px "Roboto-Regular", sans-serif;
     text-align: center; }
+    .footer .footer__txt a[href^="tel:"], .footer .footer__txt a[href^="mailto:"] {
+      color: #fff; }
 
 .slider-laptop .slider-1 {
   margin: 0 auto;
