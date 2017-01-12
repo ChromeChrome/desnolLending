@@ -1,5 +1,4 @@
 @import "_mixin";
-@import "_fonts";
 @import "_variables";
 
 /*
@@ -49,5 +48,42 @@
 }
 
 @media( max-width: 830px ){
+    .main {
+        .main-slogan-wrap {
+            transform: translate(1%, 50%);
+        }    
+    }
+    .main-nav .main-nav__items {
+        display: block;
+        padding: 0;
+    }
+    .main-nav .main-nav__item a {
+        background: none;
+        padding: 0;
+    }
+    .main-nav .main-nav__items .main-nav__item {
+        display: block;
+    }
+    .main-nav .main-nav__item a:hover {
+        background: none;
+        color: $clr_main;
+    }
+    header video {
+        display: none;
+    } 
+    .picture-bg {
+        display: block;
+        @include background(preview-picture, jpg, center center, 792px, cover);
+    } 
+}
 
+@media( max-width: 462px ){ 
+    .main .main-slogan-wrap {
+        transform: translate(1%, 36%);
+    }
+    .main .btn {
+        display: inline-block;
+        max-width: 294px;
+        line-height: 0;
+    }
 }
