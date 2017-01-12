@@ -66,9 +66,6 @@
 }
 
 @media( max-width: 830px ){
-    body {
-        overflow: hidden;
-    }
     .main {
         .main-slogan-wrap {
             transform: translate(1%, 50%);
@@ -99,6 +96,13 @@
 }
 
 @media( max-width: 767px ){
+    .send-msg {
+        .send-msg__item {
+            .send-msg__item--txt {
+                text-align: center;
+            }
+        }
+    }
     .web-app-dev {
         .web-app-dev__plarform {
             margin-top: 0;

@@ -49,9 +49,10 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 
 gulp.task('js-libs', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
-			'app/libs/jquery-3.1.1.min.js', // Берем jQuery
-			'app/libs/bootstrap.min.js', // Берем Magnific Popup
-			'app/libs/jquery.flexslider-min.js'
+			'app/js/libs/jquery-3.1.1.min.js', // Берем jQuery
+			'app/js/libs/bootstrap.min.js', // Берем bootstrap
+			'app/js/libs/jquery.flexslider-min.js', // Берем flexslider
+			'app/js/libs/jquery.inputmask.bundle.min.js' // Берем inputmask
 		])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		.pipe(uglify()) // Сжимаем JS файл

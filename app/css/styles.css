@@ -687,8 +687,6 @@ header {
     border: none; } }
 
 @media (max-width: 830px) {
-  body {
-    overflow: hidden; }
   .main .main-slogan-wrap {
     -webkit-transform: translate(1%, 50%);
         -ms-transform: translate(1%, 50%);
@@ -714,6 +712,8 @@ header {
     background-size: cover; } }
 
 @media (max-width: 767px) {
+  .send-msg .send-msg__item .send-msg__item--txt {
+    text-align: center; }
   .web-app-dev .web-app-dev__plarform {
     margin-top: 0; }
     .web-app-dev .web-app-dev__plarform .web-app-dev__plarform--title {

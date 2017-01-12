@@ -21,9 +21,7 @@ $(function () {
 
     /*
         * Flexslider
-     */
-
-    
+    */
     $('.slider-1').flexslider({
         animation: "fade",
         animationLoop: true,
@@ -42,6 +40,20 @@ $(function () {
         nextText:""
     }); 
 
+    /*
+        * input mask librari
+    */
+    $("input[name='phoneInPopup'], input[name='phoneGuest']").inputmask("+7 (999) 999 99 99", {
+      alias: 'phonebe',
+      //clearMaskOnLostFocus: false,
+      onBeforeMask: function (value, opts) {
+        var processedValue = value.replace(/^0/g, "");
+        if (processedValue.indexOf(" ") > 1 ||     processedValue.indexOf(" ") == -1) {
+          processedValue = " " + processedValue;
+        }
+        return processedValue;
+      }
+    });
     /*
         * Feedback form
      */
