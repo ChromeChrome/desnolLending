@@ -1,0 +1,19 @@
+@mixin fonts($name_fonts, $weight) {
+  @font-face {
+    font-family: "#{$name_fonts}";
+    src: url("../fonts/#{$name_fonts}.eot");
+    src: url("../fonts/#{$name_fonts}.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/#{$name_fonts}.woff") format("woff"),
+      url("../fonts/#{$name_fonts}.ttf") format("truetype"),
+      url("../fonts/#{$name_fonts}.svg##{$name_fonts}") format("svg");
+    font-weight: $weight;
+    font-style: normal;
+  }
+}
+ 
+@mixin background($name, $format, $bp, $height, $bs) {
+    background: url(../images/#{$name}.#{$format}) no-repeat;
+    background-position: $bp;
+    height: $height;
+    background-size: $bs;
+}
