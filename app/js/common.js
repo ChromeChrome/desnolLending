@@ -25,12 +25,12 @@ $(function () {
 
     
     $('.slider-1').flexslider({
-        animation: "slide",
+        animation: "fade",
         animationLoop: false,
         itemMax:1,
         controlNav:false,
-        prevText:"111111111",
-        nextText:"22222222222"
+        prevText:"",
+        nextText:""
     }); 
 
     $('.slider-2').flexslider({
