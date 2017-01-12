@@ -681,7 +681,8 @@ header {
 
 @media (max-width: 991px) {
   .web-app-dev .web-app-dev__item {
-    width: 100%; }
+    width: 100%;
+    margin-right: auto; }
   .partners .partners-list__item {
     width: 100%; }
   .block-form .block-form__form input[type="text"], .block-form .block-form__form input[type="email"],
@@ -698,9 +699,10 @@ header {
 
 @media (max-width: 830px) {
   .main .main-slogan-wrap {
-    -webkit-transform: translate(1%, 50%);
-        -ms-transform: translate(1%, 50%);
-            transform: translate(1%, 50%); }
+    -webkit-transform: translate(0%, 50%);
+        -ms-transform: translate(0%, 50%);
+            transform: translate(0%, 50%);
+    padding-left: 5%; }
   .main-nav .main-nav__items {
     display: block;
     padding: 0; }
