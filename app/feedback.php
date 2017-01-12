@@ -22,6 +22,7 @@ function handler_mail($nameGuest, $phoneGuest, $emailGuest, $msgTask){
     
     if ( (!empty($nameGuest) and !empty($phoneGuest)) || (!empty($emailGuest) and !empty($nameGuest)) ){
         mail($to, $subject, $message, $headers); 
+        echo "Успешно";
     }
     else {
         echo "Не все поля заполнены";     
@@ -33,10 +34,10 @@ if(isset($userData["nameGuest"])){
         $userData["emailGuest"],$userData["msgTask"]
     );
 }
-// elseif(isset($userData["name_itc"])){
-//     handler_mail( 
-//         $userData["name_itc"], $userData["phone_itc"], "",
-//         $userData["msg"], $userData["formName"], $formPage, $userData, ""
-//     ); 
-// }
+elseif(isset($userData["nameInPopup"])){
+    handler_mail( 
+        $userData["nameInPopup"], $userData["phoneInPopup"] ,
+        $userData["emailInPopup"],$userData["msgInPopup"]
+    );
+}
 ?>

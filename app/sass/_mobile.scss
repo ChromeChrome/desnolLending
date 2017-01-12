@@ -19,7 +19,7 @@
             }
         }
     }
-    
+
 }
 
 @media ( max-width: 1199px ){
@@ -28,4 +28,26 @@
             margin-right: 23px;
         }
     }
+}
+
+@media( max-width: 991px ){
+    .web-app-dev { 
+        .web-app-dev__item {
+            width: 100%;
+        }
+    }
+    .partners {
+        .partners-list__item {
+            width: 100%;
+        }
+    }
+    .block-form .block-form__form {
+        input[type="text"], textarea {
+            width: 100%;    
+        }
+     }
+}
+
+@media( max-width: 830px ){
+
 }

@@ -419,7 +419,7 @@ header {
         font: 20px $fnt_rm;
     }
     .block-form__form {
-        input[type="text"],
+        input[type="text"],input[type="email"],
         textarea {
             color: #a7a7a7;
             width: 570px;
@@ -427,11 +427,12 @@ header {
             border: none;
             padding-left: 34px;
         }
-        input[type="text"] {
+        input[type="text"],input[type="email"] {
             height: 50px;
             margin-bottom: 7px;
         }
         input[type="text"]:-webkit-input-placeholder,
+        input[type="email"]:-webkit-input-placeholder,
         textarea:-webkit-input-placeholder {
             font: 16px $fnt_rl;
             color: #a7a7a7;

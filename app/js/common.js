@@ -46,7 +46,6 @@ $(function () {
      function feedbackSend( formSend, nameField, emailField, phoneField, messageFields ){
         $(formSend).submit(function (event) {
             event.preventDefault();
-            console.log(11111);
             var arrField    = [$(nameField), $(emailField), $(phoneField), $(messageFields)],
                 cntNotNull  = 0;
 
@@ -68,8 +67,7 @@ $(function () {
                     console.log(data); 
                     setTimeout(
                         function(){
-                            $("#thank").modal('hide');
-                            $("#thankSpecial").modal('hide');
+                            $(".free-consultation--close").trigger("click");
                             $(formSend).trigger('reset');
                         }, 2000
                     );
@@ -83,5 +81,10 @@ $(function () {
         ".block-form__form>form","input[name='nameGuest']",
         "input[name='emailGuest']", "input[name='phoneGuest']",
         "textarea[name='msgTask']"
+    );
+    feedbackSend(
+        ".free-consultation__items>form","input[name='nameInPopup']",
+        "input[name='emailInPopup']", "input[name='phoneInPopup']",
+        "textarea[name='msgInPopup']"
     );
 })
