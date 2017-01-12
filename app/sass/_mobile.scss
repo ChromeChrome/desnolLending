@@ -96,12 +96,21 @@
 }
 
 @media( max-width: 767px ){
+    .web-app-dev__item {
+        font-size: 16px;
+        text-transform: uppercase;
+    }
     .send-msg {
         .send-msg__item {
             .send-msg__item--txt {
                 text-align: center;
+                text-transform: uppercase;
+                margin-bottom: 30px;
             }
         }
+    }
+    .advantage__item--bottom {
+        text-transform: uppercase;
     }
     .web-app-dev {
         .web-app-dev__plarform {
