@@ -685,8 +685,10 @@ header {
     margin-right: auto; }
   .partners .partners-list__item {
     width: 100%; }
-  .block-form .block-form__form input[type="text"], .block-form .block-form__form input[type="email"],
-  .block-form .block-form__form input[type="submit"], .block-form .block-form__form textarea {
+  .block-form .block-form__form input[type="text"],
+  .block-form .block-form__form input[type="email"],
+  .block-form .block-form__form input[type="submit"],
+  .block-form .block-form__form textarea {
     width: 100%; }
   .slider-laptop .slider-1 {
     margin: 0 auto;
@@ -706,26 +708,26 @@ header {
   .main-nav .main-nav__items {
     display: block;
     padding: 0; }
-  .main-nav .main-nav__item a {
-    background: none;
-    padding: 0; }
-  .get-mob-app .slider2__item--txt {
-    text-transform: uppercase; }
-  .main-nav .main-nav__items .main-nav__item {
-    display: block; }
-  .main-nav .main-nav__item a:hover {
-    background: none;
-    color: #21ae78; }
-  header video {
-    display: none; }
-  .picture-bg {
-    display: block;
-    background: url(../images/preview-picture.jpg) no-repeat;
-    background-position: center center;
-    height: 792px;
-    background-size: cover; } }
+    .main-nav .main-nav__items .main-nav__item {
+      display: block; }
+      .main-nav .main-nav__items .main-nav__item a {
+        background: none;
+        padding: 0; }
+      .main-nav .main-nav__items .main-nav__item a:hover {
+        background: none;
+        color: #21ae78; }
+    .main-nav .main-nav__items .get-mob-app .slider2__item--txt {
+      text-transform: uppercase; }
+    .main-nav .main-nav__items header video {
+      display: none; }
+    .main-nav .main-nav__items .picture-bg {
+      display: block;
+      background: url(../images/preview-picture.jpg) no-repeat;
+      background-position: center center;
+      height: 792px;
+      background-size: cover; } }
 
-@media (max-width: 767px) {
+@media (max-width: 830px) and (max-width: 767px) {
   .web-app-dev__item {
     font-size: 16px;
     text-transform: uppercase; }
@@ -782,5 +784,7 @@ header {
     padding-left: 0px;
     height: auto;
     padding-bottom: 20px; }
-    .free-consultation input[type="text"], .free-consultation input[type="email"], .free-consultation textarea {
+    .free-consultation input[type="text"],
+    .free-consultation input[type="email"],
+    .free-consultation textarea {
       width: 100%; } }
