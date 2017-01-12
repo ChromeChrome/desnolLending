@@ -709,6 +709,8 @@ header {
   .main-nav .main-nav__item a {
     background: none;
     padding: 0; }
+  .get-mob-app .slider2__item--txt {
+    text-transform: uppercase; }
   .main-nav .main-nav__items .main-nav__item {
     display: block; }
   .main-nav .main-nav__item a:hover {

@@ -73,17 +73,19 @@
     .main-nav .main-nav__items {
         display: block;
         padding: 0;
+        .main-nav__item {
+            display: block;
+            a {
+                background: none;
+                padding: 0;
+            }
+            a:hover {
+                background: none;
+                color: $clr_main;
+            }
     }
-    .main-nav .main-nav__item a {
-        background: none;
-        padding: 0;
-    }
-    .main-nav .main-nav__items .main-nav__item {
-        display: block;
-    }
-    .main-nav .main-nav__item a:hover {
-        background: none;
-        color: $clr_main;
+    .get-mob-app .slider2__item--txt {
+        text-transform: uppercase;
     }
     header video {
         display: none;
