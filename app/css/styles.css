@@ -169,7 +169,8 @@ header {
   border: 1px solid #fff;
   font-family: "Roboto-Black", sans-serif; }
   .main .btn:hover {
-    color: #fff; }
+    color: #fff;
+    background: #fab31a; }
 
 .web-app-dev .web-app-dev__title {
   text-align: center;
@@ -425,6 +426,8 @@ header {
     background: #fab31a;
     border: none;
     margin-bottom: 75px; }
+    .block-form .btn:hover {
+      background: #21ae78; }
 
 .support_month {
   text-align: center;
@@ -457,6 +460,8 @@ header {
     height: 52px;
     line-height: 52px;
     font-family: "Roboto-Black", sans-serif; }
+    .discussion-ideas .btn:hover {
+      background: #fab31a; }
 
 .slider-laptop .slider-laptop__items {
   position: relative;
@@ -490,6 +495,8 @@ header {
     width: 32px;
     height: 32px;
     cursor: pointer; }
+    .free-consultation .free-consultation--close:hover {
+      background: #fab31a; }
   .free-consultation input:not([type="submit"]),
   .free-consultation textarea {
     width: 337px;
@@ -519,6 +526,8 @@ header {
     height: 52px;
     color: #fff;
     font: 16px "Roboto-Black", sans-serif; }
+    .free-consultation input[type="submit"]:hover {
+      background: #fab31a; }
   .free-consultation .free-consultation__txt--title {
     padding-top: 30px;
     margin-bottom: 25px;
@@ -667,7 +676,7 @@ header {
         -ms-transform: translate(11%, 40%);
             transform: translate(11%, 40%); }
   .possibilities-app .possibilities-app__item img {
-    max-width: 420px; } }
+    max-width: 400px; } }
 
 @media (max-width: 1199px) {
   .web-app-dev .web-app-dev__item {
@@ -681,8 +690,10 @@ header {
 
 @media (max-width: 991px) {
   .web-app-dev .web-app-dev__item {
-    width: 100%;
+    width: 50%;
     margin-right: auto; }
+  .web-app-dev__products {
+    font-size: 0; }
   .partners .partners-list__item {
     width: 100%; }
   .block-form .block-form__form input[type="text"], .block-form .block-form__form input[type="email"],
@@ -704,16 +715,28 @@ header {
             transform: translate(0%, 50%);
     padding-left: 5%; }
   .main-nav .main-nav__items {
-    display: block;
-    padding: 0; }
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
     .main-nav .main-nav__items .main-nav__item {
-      display: block; }
+      padding-right: 40px; }
       .main-nav .main-nav__items .main-nav__item a {
         background: none;
         padding: 0; }
       .main-nav .main-nav__items .main-nav__item a:hover {
         background: none;
         color: #21ae78; }
+  .possibilities-app .possibilities-app__item img {
+    max-width: 340px; }
   .block-form__form {
     padding: 20px; }
   .get-mob-app .slider2__item--txt {
@@ -752,11 +775,19 @@ header {
     background-size: cover;
     padding-left: 10px; } }
 
+@media (max-width: 700px) {
+  .possibilities-app .possibilities-app__item img {
+    max-width: 420px; } }
+
 @media (max-width: 750px) {
   .slider-laptop .slider-1 {
     margin-top: 5%; }
   .slider-laptop .slider-laptop__items {
     background-position: top center; } }
+
+@media (max-width: 550px) {
+  .web-app-dev .web-app-dev__item {
+    width: 100%; } }
 
 @media (max-width: 500px) {
   .slider-laptop .slider-1 .flex-caption {
@@ -784,3 +815,10 @@ header {
     padding-bottom: 20px; }
     .free-consultation input[type="text"], .free-consultation input[type="email"], .free-consultation textarea {
       width: 100%; } }
+
+@media (max-width: 350px) {
+  .discussion-ideas .btn {
+    display: inline-block;
+    max-width: 350px;
+    height: 52px;
+    line-height: 25px; } }

@@ -11,7 +11,7 @@
     .possibilities-app {
         .possibilities-app__item {
             img {
-                max-width: 420px;
+                max-width: 400px;
             }
         }
     }
@@ -35,9 +35,12 @@
 @media( max-width: 991px ){
     .web-app-dev { 
         .web-app-dev__item {
-            width: 100%;
+            width: 50%;
              margin-right: auto;
         }
+    }
+    .web-app-dev__products {
+        font-size: 0;
     }
     .partners {
         .partners-list__item {
@@ -71,10 +74,11 @@
         }    
     }
     .main-nav .main-nav__items {
-        display: block;
-        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
         .main-nav__item {
-            display: block;
+            padding-right: 40px;
             a {
                 background: none;
                 padding: 0;
@@ -82,6 +86,13 @@
             a:hover {
                 background: none;
                 color: $clr_main;
+            }
+        }
+    }
+    .possibilities-app {
+        .possibilities-app__item {
+            img {
+                max-width:340px;
             }
         }
     }
@@ -132,11 +143,22 @@
                 }
             }
         }
+        
     }
     .free-consultation {
         background-size: cover;
         padding-left: 10px;
     } 
+}
+
+@media( max-width: 700px ){
+    .possibilities-app {
+        .possibilities-app__item {
+            img {
+                max-width: 420px;
+            }
+        }
+    }
 }
 
 @media( max-width: 750px ){
@@ -148,6 +170,14 @@
     .slider-laptop {
         .slider-laptop__items {
             background-position: top center;
+        }
+    }
+}
+
+@media(max-width: 550px){
+    .web-app-dev {
+        .web-app-dev__item {
+            width: 100%;
         }
     }
 }
@@ -185,5 +215,14 @@
         input[type="text"], input[type="email"], textarea {
             width: 100%;
         }
+    }
+}
+
+@media( max-width: 350px ){ 
+    .discussion-ideas .btn {
+        display: inline-block;
+        max-width: 350px;
+        height: 52px;
+        line-height: 25px;
     }
 }

@@ -169,6 +169,7 @@ header {
         font-family: $fnt_rb;
         &:hover {
             color: #fff;
+            background: $clr_main2;
         }
     }
 }
@@ -473,6 +474,9 @@ header {
         background: $clr_main2;
         border: none;
         margin-bottom: 75px;
+        &:hover {
+            background: $clr_main;
+        }
     }
 }
 
@@ -506,6 +510,9 @@ header {
         height: 52px;
         line-height: 52px;
         font-family: $fnt_rb;
+        &:hover {
+            background: $clr_main2;
+        }
     }
 }
 
@@ -531,6 +538,9 @@ header {
         width: 32px;
         height: 32px;
         cursor: pointer;
+        &:hover {
+            background: $clr_main2;
+        }
     }
     @include background(form-bg, jpg, center center, 478px, contain);
     max-width: 678px;
@@ -569,6 +579,9 @@ header {
         height: 52px;
         color: #fff;
         font: 16px $fnt_rb;
+        &:hover {
+            background: $clr_main2;
+        }
     }
     .free-consultation__txt--title {
         padding-top: 30px;
