@@ -157,6 +157,7 @@
         .possibilities-app__item {
             img {
                 max-width: 420px;
+                height: auto;
             }
         }
     }
@@ -196,6 +197,9 @@
 }
 
 @media( max-width: 462px ){ 
+    body {
+        overflow-x: hidden;
+    }
     .main .main-slogan-wrap {
         transform: translate(1%, 36%);
     }
