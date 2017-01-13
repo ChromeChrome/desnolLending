@@ -101,6 +101,7 @@
     }
     .get-mob-app .slider2__item--txt {
         text-transform: uppercase;
+        padding-left: 2px;
     }
     header video {
         display: none;
@@ -200,9 +201,10 @@
     }
     .main .btn {
         display: inline-block;
-        max-width: 294px;
-        line-height: 2;
-        height: 62px;
+        padding: 11px 0;
+        max-width: 260px;
+        line-height: 21px;
+        height: 63px;
     }
 }
 
@@ -211,10 +213,17 @@
         background-size: cover;
         padding-left: 0px;
         height: auto;
-        padding-bottom: 20px;
+        padding: 20px;
         input[type="text"], input[type="email"], textarea {
             width: 100%;
         }
+    }
+}
+
+@media( max-width: 398px ){ 
+    .free-consultation .free-consultation__item .free-consultation__item--response {
+        margin-left: 0px;
+        margin-top: 10px;
     }
 }
 
@@ -222,7 +231,8 @@
     .discussion-ideas .btn {
         display: inline-block;
         max-width: 350px;
-        height: 52px;
+        height: 66px;
+        padding: 11px 0;
         line-height: 25px;
     }
 }

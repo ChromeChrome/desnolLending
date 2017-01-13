@@ -471,11 +471,12 @@ header {
     .btn {
         width: 229px;
         height: 52px;
-        background: $clr_main2;
+        background: $clr_main;
         border: none;
         margin-bottom: 75px;
+        font-family: $fnt_rb;
         &:hover {
-            background: $clr_main;
+            background: $clr_main2;
         }
     }
 }
@@ -628,6 +629,9 @@ header {
     }
 }
 
+/*
+    * slider-1
+*/
 .slider-laptop {
     .slider-1 {
         margin: 0 auto;
@@ -660,6 +664,9 @@ header {
             position: absolute;
             text-align: left;
             font-size: 18px;
+        }
+        .flex-caption--mod {
+            padding-left: 23%;
         }
     }
         .slider-1 .flex-prev {
