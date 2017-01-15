@@ -732,9 +732,12 @@ header {
             flex-direction: row;
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
-            justify-content: space-around; }
+            justify-content: space-around;
+    padding: 12px; }
     .main-nav .main-nav__items .main-nav__item {
       padding-right: 40px; }
+      .main-nav .main-nav__items .main-nav__item:last-child {
+        padding-right: 0; }
       .main-nav .main-nav__items .main-nav__item a {
         background: none;
         padding: 0; }
@@ -805,12 +808,10 @@ header {
     height: 300px; } }
 
 @media (max-width: 462px) {
-  body {
-    overflow-x: hidden; }
   .main .main-slogan-wrap {
-    -webkit-transform: translate(1%, 36%);
-        -ms-transform: translate(1%, 36%);
-            transform: translate(1%, 36%); }
+    -webkit-transform: translate(0%, 36%);
+        -ms-transform: translate(0%, 36%);
+            transform: translate(0%, 36%); }
   .main .btn {
     display: inline-block;
     padding: 11px 0;
@@ -819,6 +820,17 @@ header {
     height: 63px; } }
 
 @media (max-width: 410px) {
+  header .header-container {
+    left: 0%;
+    -webkit-transform: translate(0%, 0);
+        -ms-transform: translate(0%, 0);
+            transform: translate(0%, 0);
+    width: 100%;
+    padding: 0; }
+  .header-logo, .main-nav, .header-logo img {
+    display: block;
+    width: 100%;
+    margin: auto; }
   .free-consultation {
     background-size: cover;
     padding-left: 0px;

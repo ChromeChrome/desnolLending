@@ -77,8 +77,12 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        padding: 12px;
         .main-nav__item {
             padding-right: 40px;
+            &:last-child {
+                padding-right: 0;
+            }
             a {
                 background: none;
                 padding: 0;
@@ -197,11 +201,8 @@
 }
 
 @media( max-width: 462px ){ 
-    body {
-        overflow-x: hidden;
-    }
     .main .main-slogan-wrap {
-        transform: translate(1%, 36%);
+        transform: translate(0%, 36%);
     }
     .main .btn {
         display: inline-block;
@@ -213,6 +214,17 @@
 }
 
 @media( max-width: 410px ){ 
+    header .header-container {
+        left: 0%;
+        transform: translate(0%, 0);
+        width: 100%;
+        padding: 0;
+    }
+    .header-logo, .main-nav,  .header-logo img  {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
     .free-consultation {
         background-size: cover;
         padding-left: 0px;
