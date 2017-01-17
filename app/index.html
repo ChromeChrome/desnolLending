@@ -19,7 +19,14 @@
         <header class="header">
             <div class="header-container container">
                 <div class="header-logo">
-                    <img src="images/logo_2.svg?v=5" alt="">
+                    <div class="header-logo__items">
+                        <div class="header-logo__img">
+                            <img src="images/logo_2.svg?v=5" alt="">
+                        </div>
+                        <div class="header-logo__txt">
+                            мобильные приложения
+                        </div>
+                    </div>
                     <div class="contacts">
                         <a href="tel:+7 (495) 933 48 41">+7 (495) 933 48 41</a>
                         <div><a href="mailto:info@desnol.ru">info@desnol.ru</a></div>
@@ -98,7 +105,7 @@
     <section class="web-app-dev">
         <div class="container">
             <div class="row">
-                <div class="web-app-dev__title">Мы разрабатываем мобильные приложения</div>
+                <div class="web-app-dev__title title">Мы разрабатываем мобильные приложения</div>
             </div>
             <div class="row">
                 <div class="web-app-dev__products center-block text-center">
@@ -302,7 +309,7 @@
                     <img src="images/possibilities-app12.jpg" alt="">
                 </div>
                 <div class="possibilities-app__item--txt">
-                    возможность сохранять настройки, что упрощает работу
+                    возможность сохранять настройки, упрощает работу
                 </div>
             </div>
         </div>
@@ -321,13 +328,26 @@
             </div>
             <div class="row">
                 <div class="block-form__form">
-                    <form action="" class="center-block text-center">
-                        <input name="nameGuest" type="text" placeholder="Имя" required><br>
-                        <input name="emailGuest" type="email" placeholder="E-mail" required><br>
-                        <input name="phoneGuest" type="text"  placeholder="Телефон" minlength="6" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}"required><br>
-                        <textarea name="msgTask" placeholder="Краткая постановка задачи/вопрос" required></textarea><br>
-                        <input class="btn" type="submit" value="отправить заявку">
-                    </form>
+                            <form action="" class="center-block text-center">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-5 col-md-offset-1">
+                                            <input name="nameGuest" type="text" placeholder="Имя" required><br>
+                                            <input name="emailGuest" type="email" placeholder="E-mail" required><br>
+                                            <input name="phoneGuest" type="text"  placeholder="Телефон" minlength="6" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}"required><br>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <textarea name="msgTask" placeholder="Краткая постановка задачи/вопрос" required></textarea><br>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <input class="btn text-center" type="submit" value="отправить заявку">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -343,7 +363,7 @@
                         <img src="images/send1.svg?v=1" alt="">
                     </div>
                     <div class="send-msg__item--txt">
-                        Мы получаем заявку и проводим с Вами бесплатную консультацию
+                        <span class="send-msg_item--number">1/</span>Мы получаем заявку и проводим с Вами бесплатную консультацию
                     </div>
                 </div>
                 <div class="send-msg__item col-md-2">
@@ -351,7 +371,7 @@
                         <img src="images/send2.svg?v=1" alt="">
                     </div>
                     <div class="send-msg__item--txt">
-                        Погружаемся в Ваш бизнес и помогаем сформировать технические требования к разработке
+                        <span class="send-msg_item--number">2/</span> Погружаемся в Ваш бизнес и помогаем сформировать технические требования к разработке
                     </div>
                 </div>
                 <div class="send-msg__item col-md-2">
@@ -359,7 +379,7 @@
                         <img src="images/send3.svg?v=1" alt="">
                     </div>
                     <div class="send-msg__item--txt">
-                        Проектируем мобильное приложение для решения Ваших бизнес-задач
+                        <span class="send-msg_item--number">3/</span> Проектируем мобильное приложение для решения Ваших бизнес-задач
                     </div>
                 </div>
                 <div class="send-msg__item col-md-2">
@@ -367,7 +387,7 @@
                         <img src="images/send4.svg?v=1" alt="">
                     </div>
                     <div class="send-msg__item--txt">
-                        Делаем дизайн — простой, понятный и удобный
+                        <span class="send-msg_item--number">4/</span> Делаем дизайн — простой, понятный и удобный
                     </div>
                 </div>
                 <div class="send-msg__item col-md-2">
@@ -375,7 +395,7 @@
                         <img src="images/send5.svg?v=1" alt="">
                     </div>
                     <div class="send-msg__item--txt">
-                        Тестируем — проводим для Вас полную проверку приложения
+                        <span class="send-msg_item--number">5/</span> Тестируем — проводим для Вас полную проверку приложения
                     </div>
                 </div>
                 <div class="send-msg__item col-md-2">
@@ -383,7 +403,7 @@
                         <img src="images/send6.png" alt="">
                     </div>
                     <div class="send-msg__item--txt">
-                        Осуществляем поддержку — Вы можете быть уверены, что Ваше приложение работает исправно!
+                        <span class="send-msg_item--number">6/</span> Осуществляем поддержку — Вы можете быть уверены, что Ваше приложение работает исправно!
                     </div>
                 </div>
             </div>
@@ -416,7 +436,7 @@
                     </div>
                     <div class="advantage__item col-md-3">
                         <div class="advantage__item--top">300+</div>
-                        <div class="advantage__item--middle">УСПЕШНЫХ проектов</div>
+                        <div class="advantage__item--middle">УСПЕШНЫХ ПРОЕКТОВ</div>
                         <div class="advantage__item--bottom">
                             и довольных бизнес-клиентов
                         </div>
@@ -438,7 +458,7 @@
                                 <img src="images/partners3.jpg" alt="">
                             </div>
                             <div class="partners-list__item">
-                                <img src="images/partners9.jpg" alt="">
+                                <img src="images/partners9.jpg"  alt="">
                             </div>
                             <div class="partners-list__item">
                                 <img src="images/partners6.jpg" alt="">

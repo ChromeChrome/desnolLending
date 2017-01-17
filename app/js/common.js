@@ -35,7 +35,7 @@ $(function () {
         animation: "slide",
         animationLoop: true,
         itemMax:1,
-        controlNav:false,
+        controlNav:true,
         prevText:"",
         nextText:""
     }); 
@@ -54,6 +54,11 @@ $(function () {
         return processedValue;
       }
     });
+
+    /*
+        * Opening a popup for 1 minute
+    */
+    setTimeout(function(){ $("#free-consultation").modal('show')}, 60000);
     /*
         * Feedback form
      */

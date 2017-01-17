@@ -104,6 +104,13 @@ a[href^="tel:"], a[href^="mailto:"] {
   .header-logo img {
     display: inline-block;
     vertical-align: middle; }
+  .header-logo .header-logo__items {
+    display: inline-block;
+    vertical-align: top; }
+    .header-logo .header-logo__items .header-logo__txt {
+      margin-top: 3px;
+      margin-left: -12px;
+      font: 16px "Roboto-Light", sans-serif; }
 
 .contacts {
   position: relative;
@@ -122,7 +129,9 @@ a[href^="tel:"], a[href^="mailto:"] {
     background: #fab31a; }
 
 header {
-  position: relative; }
+  position: relative;
+  height: 790px;
+  overflow: hidden; }
   header .header-container {
     position: absolute;
     text-align: center;
@@ -173,9 +182,6 @@ header {
     background: #fab31a; }
 
 .web-app-dev .web-app-dev__title {
-  text-align: center;
-  text-transform: uppercase;
-  font: 37px "Roboto-Light", sans-serif;
   margin-bottom: 51px; }
 
 .web-app-dev .web-app-dev__item {
@@ -184,11 +190,11 @@ header {
   margin-right: 29px;
   width: 22.8%;
   height: 250px;
-  font: 15px "Roboto-Medium", sans-serif;
+  font: 18px "Roboto-Regular", sans-serif;
   color: #fff;
   text-align: center;
-  padding-left: 55px;
-  padding-right: 55px; }
+  padding-left: 37px;
+  padding-right: 37px; }
   .web-app-dev .web-app-dev__item .web-app-dev__item-img {
     width: 75px;
     height: 75px;
@@ -336,6 +342,9 @@ header {
     margin-bottom: 33px; }
   .send-msg .send-msg__item .send-msg__item--txt {
     text-align: left; }
+  .send-msg .send-msg__item .send-msg_item--number {
+    font: 22px "Roboto-Black", sans-serif;
+    color: #fab31a; }
 
 .possibilities-app {
   margin-top: 75px;
@@ -374,27 +383,28 @@ header {
       bottom: 0;
       right: 0;
       margin: auto;
-      max-width: 100%;
       max-height: 100%;
+      padding-left: 22px;
+      padding-right: 22px;
       width: 296px;
       max-width: 100%;
       height: 105px;
       background: rgba(224, 224, 219, 0.8);
       text-align: center;
       text-transform: uppercase;
-      font: 16px "Roboto-Black", sans-serif; }
+      font: 15px "Roboto-Black", sans-serif; }
 
 .block-form {
   background: #1b1b1b; }
   .block-form .block-form__title--top {
-    padding-top: 75px;
+    padding-top: 67px;
     padding-bottom: 16px;
     text-transform: uppercase;
     text-align: center;
     color: #fab31a;
     font: 37px "Roboto-Light", sans-serif; }
   .block-form .block-form__title--middle {
-    padding-bottom: 53px;
+    padding-bottom: 25px;
     text-transform: uppercase;
     text-align: center;
     color: #fab31a;
@@ -403,28 +413,31 @@ header {
   .block-form .block-form__form input[type="email"],
   .block-form .block-form__form textarea {
     color: #a7a7a7;
-    width: 570px;
+    width: 471px;
     background: #313a3d;
     border: none;
-    padding-left: 34px; }
+    padding-left: 34px;
+    text-transform: uppercase; }
   .block-form .block-form__form input[type="text"],
   .block-form .block-form__form input[type="email"] {
-    height: 50px;
-    margin-bottom: 7px; }
+    height: 44px;
+    margin-bottom: 5px; }
   .block-form .block-form__form input[type="text"]:-webkit-input-placeholder,
   .block-form .block-form__form input[type="email"]:-webkit-input-placeholder,
   .block-form .block-form__form textarea:-webkit-input-placeholder {
-    font: 16px "Roboto-Light", sans-serif;
+    font: 15px "Roboto-Light", sans-serif;
     color: #a7a7a7;
     text-transform: uppercase; }
   .block-form .block-form__form textarea {
-    margin-bottom: 21px;
-    height: 201px; }
+    padding-top: 12px;
+    height: 141px;
+    margin-left: 15px; }
   .block-form .btn {
     width: 229px;
     height: 52px;
     background: #21ae78;
     border: none;
+    margin-top: 25px;
     margin-bottom: 75px;
     font-family: "Roboto-Black", sans-serif; }
     .block-form .btn:hover {
@@ -626,7 +639,6 @@ header {
   max-height: 182px;
   border-left: 1px solid #fab31a;
   border-right: 1px solid #fab31a;
-  overflow: hidden;
   margin-top: 50px; }
 
 .get-mob-app .slider-2 .flex-prev:before {
@@ -673,6 +685,23 @@ header {
     display: inline-block !important;
     width: auto !important; }
 
+.get-mob-app .flex-control-nav {
+  bottom: -40px; }
+
+.get-mob-app .flex-active {
+  background: #fab31a !important; }
+
+.get-mob-app .flex-control-nav li {
+  display: inline-block;
+  margin-right: 11px; }
+
+.get-mob-app .flex-control-paging li a {
+  width: 9px;
+  height: 9px;
+  background: #b8b8b8;
+  -webkit-border-radius: 9px;
+          border-radius: 9px; }
+
 /*
     * Adaptive style
 */
@@ -684,27 +713,41 @@ header {
   .possibilities-app .possibilities-app__item img {
     max-width: 400px; } }
 
+@media (max-width: 1366px) {
+  .slider-laptop .slider-laptop__items {
+    -webkit-transform: translate(0, -30%);
+        -ms-transform: translate(0, -30%);
+            transform: translate(0, -30%); } }
+
 @media (max-width: 1199px) {
   .web-app-dev .web-app-dev__item {
-    margin-right: 23px; } }
+    margin-right: 23px; }
+  .block-form .block-form__form input[type="text"], .block-form .block-form__form input[type="email"], .block-form .block-form__form textarea {
+    width: 365px; } }
 
 @media (max-width: 1160px) {
   .slider-laptop .slider-laptop__items {
-    -webkit-transform: translate(0, 0%);
-        -ms-transform: translate(0, 0%);
-            transform: translate(0, 0%); } }
+    -webkit-transform: translate(0, -24%);
+        -ms-transform: translate(0, -24%);
+            transform: translate(0, -24%); } }
 
 @media (max-width: 991px) {
   .web-app-dev .web-app-dev__item {
-    width: 50%;
+    width: 100%;
     margin-right: auto; }
+  header {
+    height: 550px; }
   .web-app-dev__products {
     font-size: 0; }
-  .partners .partners-list__item {
-    width: 100%; }
+  .partners {
+    font-size: 0; }
+    .partners .partners-list__item {
+      width: 50%; }
   .block-form .block-form__form input[type="text"], .block-form .block-form__form input[type="email"],
   .block-form .block-form__form input[type="submit"], .block-form .block-form__form textarea {
     width: 100%; }
+  .block-form .block-form__form textarea {
+    margin-left: 0; }
   .slider-laptop .slider-1 {
     margin: 0 auto;
     max-width: 922px;
@@ -715,11 +758,15 @@ header {
     border: none; } }
 
 @media (max-width: 830px) {
+  header {
+    height: auto; }
   .main .main-slogan-wrap {
     -webkit-transform: translate(0%, 50%);
         -ms-transform: translate(0%, 50%);
             transform: translate(0%, 50%);
     padding-left: 5%; }
+  .web-app-dev .web-app-dev__item {
+    height: 142px; }
   .main-nav .main-nav__items {
     display: -webkit-box;
     display: -webkit-flex;
@@ -768,12 +815,27 @@ header {
     margin-bottom: 30px; }
   .advantage__item--bottom {
     text-transform: uppercase; }
+  .web-app-dev .web-app-dev__item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .web-app-dev .web-app-dev__item .web-app-dev__item-img {
+      display: none; }
   .web-app-dev .web-app-dev__plarform {
     margin-top: 0; }
     .web-app-dev .web-app-dev__plarform .web-app-dev__plarform--title {
       padding-top: 0; }
     .web-app-dev .web-app-dev__plarform .web-app-dev__plarformItems {
-      width: 100%;
+      width: 33%;
       margin-top: 29px;
       padding-bottom: 29px; }
       .web-app-dev .web-app-dev__plarform .web-app-dev__plarformItems .web-app-dev__plarformItem {
@@ -785,18 +847,25 @@ header {
     background-size: cover;
     padding-left: 10px; } }
 
+@media (max-width: 750px) {
+  .slider-laptop .slider-1 {
+    margin-top: 5%; }
+  .slider-laptop .slider-laptop__items {
+    background-position: top center;
+    -webkit-transform: translate(0, 2%);
+        -ms-transform: translate(0, 2%);
+            transform: translate(0, 2%); } }
+
 @media (max-width: 700px) {
   .possibilities-app .possibilities-app__item img {
     max-width: 420px;
     height: auto; } }
 
-@media (max-width: 750px) {
-  .slider-laptop .slider-1 {
-    margin-top: 5%; }
-  .slider-laptop .slider-laptop__items {
-    background-position: top center; } }
-
 @media (max-width: 550px) {
+  .title {
+    font-size: 28px; }
+  .main-slogan__top, .main-slogan__middle {
+    font-size: 28px; }
   .web-app-dev .web-app-dev__item {
     width: 100%; } }
 
@@ -805,7 +874,13 @@ header {
     top: 0;
     font-size: 14px; }
   .slider-laptop .slider-laptop__items {
-    height: 300px; } }
+    height: 300px; }
+  .partners-list__item img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    margin: auto; } }
 
 @media (max-width: 462px) {
   .main .main-slogan-wrap {
