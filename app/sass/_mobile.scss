@@ -253,13 +253,14 @@
     .possibilities-app {
         .possibilities-app__item {
             .possibilities-app__item--txt {
-                padding-left: 20px;
-                padding-right: 20px;
+                padding-left: 18px;
+                padding-right: 18px;
                 width: 125px;
+                height: 75px;
                 font: 10px "Roboto-Black", sans-serif;
             }
             img {
-                    max-width: 156px;
+                max-width: 156px;
             }
         }
     }
@@ -276,6 +277,11 @@
         line-height: 21px;
         height: 63px;
     }
+    // .block-form {
+    //     .btn {
+    //         max-width: 252px;
+    //     }
+    // }
 }
 
 @media( max-width: 410px ){ 

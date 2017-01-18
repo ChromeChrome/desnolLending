@@ -883,9 +883,10 @@ header {
     margin: auto;
     padding: 20px; }
   .possibilities-app .possibilities-app__item .possibilities-app__item--txt {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 18px;
+    padding-right: 18px;
     width: 125px;
+    height: 75px;
     font: 10px "Roboto-Black", sans-serif; }
   .possibilities-app .possibilities-app__item img {
     max-width: 156px; } }
