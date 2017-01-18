@@ -765,7 +765,7 @@ header {
             transform: translate(0%, 50%);
     padding-left: 5%; }
   .web-app-dev .web-app-dev__item {
-    height: 142px; }
+    height: 105px; }
   .main-nav .main-nav__items {
     display: -webkit-box;
     display: -webkit-flex;
@@ -830,16 +830,17 @@ header {
     .web-app-dev .web-app-dev__item .web-app-dev__item-img {
       display: none; }
   .web-app-dev .web-app-dev__plarform {
-    margin-top: 0; }
+    margin-top: 0;
+    padding-bottom: 50px; }
     .web-app-dev .web-app-dev__plarform .web-app-dev__plarform--title {
       padding-top: 0; }
     .web-app-dev .web-app-dev__plarform .web-app-dev__plarformItems {
-      width: 33%;
+      width: 100%;
       margin-top: 29px;
       padding-bottom: 29px; }
       .web-app-dev .web-app-dev__plarform .web-app-dev__plarformItems .web-app-dev__plarformItem {
         display: inline-block;
-        width: 100%;
+        width: 32%;
         padding-top: 10px;
         padding-bottom: 10px; }
   .free-consultation {
@@ -879,7 +880,15 @@ header {
     max-width: 100%;
     height: auto;
     text-align: center;
-    margin: auto; } }
+    margin: auto;
+    padding: 20px; }
+  .possibilities-app .possibilities-app__item .possibilities-app__item--txt {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 125px;
+    font: 10px "Roboto-Black", sans-serif; }
+  .possibilities-app .possibilities-app__item img {
+    max-width: 156px; } }
 
 @media (max-width: 462px) {
   .main .main-slogan-wrap {
