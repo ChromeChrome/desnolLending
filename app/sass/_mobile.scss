@@ -97,6 +97,14 @@
             padding-left: 5%;
         }    
     }
+    .web-app-dev__plarform {
+        .web-app-dev__plarform--title {
+            padding-top: 20px;
+        }
+        .web-app-dev__plarformItems .web-app-dev__plarformItem {
+            width: 32%;
+        }
+    }
     .web-app-dev .web-app-dev__item {
         height: 105px;
     }
@@ -129,6 +137,9 @@
     }
     .block-form__form {
         padding: 20px;
+    }
+    .block-form .block-form__title--top {
+        font-size: 28px;
     }
     .get-mob-app .slider2__item--txt {
         text-transform: uppercase;
@@ -277,11 +288,12 @@
         line-height: 21px;
         height: 63px;
     }
-    // .block-form {
-    //     .btn {
-    //         max-width: 252px;
-    //     }
-    // }
+   .get-mob-app {
+       margin-top: 40px;
+   }
+   .web-app-dev__plarform {
+        padding-bottom: 70px;
+    }
 }
 
 @media( max-width: 410px ){ 

@@ -27,6 +27,8 @@ $(function () {
         animationLoop: true,
         itemMax:1,
         controlNav:false,
+        slideshowSpeed: 3500,
+        animationSpeed: 600,
         prevText:"",
         nextText:""
     }); 
