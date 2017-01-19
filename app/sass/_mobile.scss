@@ -81,8 +81,14 @@
           width: 100%;
           max-height: 398px;
           overflow: hidden;
-          margin-top: 11%;
+          margin-top: 8.8%;
           border: none;
+          img {
+              padding: 0% 11.7% 0;
+          }
+          .flex-next, .flex-prev {
+              left: 11.5%;
+          }
         }
      }
 }
@@ -206,7 +212,7 @@
 @media( max-width: 750px ){
     .slider-laptop {
         .slider-1 {
-            margin-top: 5%;
+            margin-top: 3%;
         }
     }
     .slider-laptop {
