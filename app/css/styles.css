@@ -806,8 +806,10 @@ header {
     border: none; }
     .slider-laptop .slider-1 img {
       padding: 0% 11.7% 0; }
-    .slider-laptop .slider-1 .flex-next, .slider-laptop .slider-1 .flex-prev {
-      left: 11.5%; } }
+    .slider-laptop .slider-1 .flex-next {
+      right: 11.4%; }
+    .slider-laptop .slider-1 .flex-prev {
+      left: 11.4%; } }
 
 @media (max-width: 830px) {
   header {
