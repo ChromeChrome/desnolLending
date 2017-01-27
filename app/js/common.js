@@ -9,7 +9,7 @@ $(function () {
     var flag = true;
 
     function Counter() {
-        if (document.body.scrollTop > 4406) {
+        if (document.body.scrollTop > 4606) {
             while (flag) {
                 $('.counter-number').each(function () {
                     $(this).prop('Counter', 0).animate({

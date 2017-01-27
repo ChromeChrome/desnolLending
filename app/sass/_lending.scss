@@ -125,6 +125,16 @@ a[href^="tel:"], a[href^="mailto:"] {
     }
 }
 
+ section {
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    position: relative;
+    background-color: white;
+    z-index: 2;
+}
+
 header {
     position: relative;
     height: 790px;
@@ -132,7 +142,7 @@ header {
     .header-container {
         position: absolute;
         text-align: center;
-        z-index: 1;
+        z-index: 2;
         left: 50%;
         top: 0;
         transform: translate(-50%, 0);
@@ -141,10 +151,11 @@ header {
         }
     }
     video {
-        width: 100%;
-        display: block;
+        position: fixed;    
+        left: 0;
         top: 0;
-        z-index: 0;
+        width: 100%;
+        z-index: 1;
     }
 }
 
@@ -153,6 +164,7 @@ header {
         position: absolute;
         display: block;
         top: 27%;
+        z-index: 3;
         transform: translate(46%, 50%);
         .main-slogan {
             text-transform: uppercase;
@@ -389,9 +401,10 @@ header {
 
 .possibilities-app {
     margin-top: 75px;
-    background: #fff;
+    background: none;
     .possibilities-app__title {
         padding-bottom: 47px;
+        color: #fff;
     }
     .possibilities-app__items {
         text-align: center;
@@ -515,7 +528,8 @@ header {
 }
 
 .discussion-ideas {
-    @include background(discussion-ideas, png, center center, 360px, cover);
+    background: none;
+    // @include background(discussion-ideas, png, center center, 360px, cover);
     .discussion-ideas__title {
         padding-top: 46px;
         text-transform: uppercase;
@@ -644,6 +658,8 @@ header {
     padding-top: 38px;
     padding-bottom: 39px;
     background: #fff;
+    position: relative;
+    z-index: 4;
     .footer__txt {
         color: #8e8e8e;
         font: 16px $fnt_rr;

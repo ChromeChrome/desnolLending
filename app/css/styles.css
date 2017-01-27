@@ -128,6 +128,15 @@ a[href^="tel:"], a[href^="mailto:"] {
     width: 1px;
     background: #fab31a; }
 
+section {
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  position: relative;
+  background-color: white;
+  z-index: 2; }
+
 header {
   position: relative;
   height: 790px;
@@ -135,7 +144,7 @@ header {
   header .header-container {
     position: absolute;
     text-align: center;
-    z-index: 1;
+    z-index: 2;
     left: 50%;
     top: 0;
     -webkit-transform: translate(-50%, 0);
@@ -144,15 +153,17 @@ header {
     header .header-container a[href^="tel:"], header .header-container a[href^="mailto:"] {
       color: #fab31a; }
   header video {
-    width: 100%;
-    display: block;
+    position: fixed;
+    left: 0;
     top: 0;
-    z-index: 0; }
+    width: 100%;
+    z-index: 1; }
 
 .main .main-slogan-wrap {
   position: absolute;
   display: block;
   top: 27%;
+  z-index: 3;
   -webkit-transform: translate(46%, 50%);
       -ms-transform: translate(46%, 50%);
           transform: translate(46%, 50%); }
@@ -347,9 +358,10 @@ header {
 
 .possibilities-app {
   margin-top: 75px;
-  background: #fff; }
+  background: none; }
   .possibilities-app .possibilities-app__title {
-    padding-bottom: 47px; }
+    padding-bottom: 47px;
+    color: #fff; }
   .possibilities-app .possibilities-app__items {
     text-align: center;
     width: 100%; }
@@ -457,10 +469,7 @@ header {
   padding: 25px 13px 5px; }
 
 .discussion-ideas {
-  background: url(../images/discussion-ideas.png) no-repeat;
-  background-position: center center;
-  height: 360px;
-  background-size: cover; }
+  background: none; }
   .discussion-ideas .discussion-ideas__title {
     padding-top: 46px;
     text-transform: uppercase;
@@ -574,7 +583,9 @@ header {
   border-top: 1px solid #dde0e4;
   padding-top: 38px;
   padding-bottom: 39px;
-  background: #fff; }
+  background: #fff;
+  position: relative;
+  z-index: 4; }
   .footer .footer__txt {
     color: #8e8e8e;
     font: 16px "Roboto-Regular", sans-serif;
@@ -806,10 +817,10 @@ header {
     border: none; }
     .slider-laptop .slider-1 img {
       padding: 0% 11.7% 0; }
-    .slider-laptop .slider-1 .flex-next {
-      right: 11.4%; }
     .slider-laptop .slider-1 .flex-prev {
-      left: 11.4%; } }
+      left: 11.5%; }
+    .slider-laptop .slider-1 .flex-next {
+      right: 11.5%; } }
 
 @media (max-width: 830px) {
   header {
@@ -851,6 +862,8 @@ header {
         color: #21ae78; }
   .possibilities-app .possibilities-app__item img {
     max-width: 340px; }
+  .possibilities-app .possibilities-app__title {
+    color: #000; }
   .block-form__form {
     padding: 20px; }
   .block-form .block-form__title--top {

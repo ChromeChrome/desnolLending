@@ -86,11 +86,11 @@
           img {
               padding: 0% 11.7% 0;
           }
-          .flex-next {
-              right: 11.4%;
-          }
           .flex-prev {
-              left: 11.4%;
+              left: 11.5%;
+          }
+          .flex-next {
+              right: 11.5%;
           }
         }
      }
@@ -142,6 +142,9 @@
             img {
                 max-width:340px;
             }
+        }
+        .possibilities-app__title {
+            color: #000;
         }
     }
     .block-form__form {
