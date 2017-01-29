@@ -1,8 +1,7 @@
-
 $(function () {
     /*
      * Counter
-    */
+     */
     window.onscroll = function () {
         Counter()
     };
@@ -28,15 +27,15 @@ $(function () {
     }
 
     /*
-        * animate class
-    */
-    setTimeout(function(){
+     * animate class
+     */
+    /*    setTimeout(function(){
         $(".get-mob-app .flex-next, .get-mob-app .flex-prev").addClass("animated infinite fast pulse");
-    },1000)
+    },1000)*/
 
     /*
-        * Buton scroll top
-    */
+     * Buton scroll top
+     */
     $(window).scrollTop(function () {
 
         var win = $(window).scrollTop();
@@ -49,8 +48,8 @@ $(function () {
     });
 
     /*
-        * arrow-top
-    */
+     * arrow-top
+     */
     $(".btn-top a").on('click', function () {
         $('html, body').animate({
             scrollTop: $($(this).data("href")).offset().top - 159
@@ -59,13 +58,13 @@ $(function () {
 
     /*
      * Flexslider
-    */
+     */
     $('.slider-1').flexslider({
         animation: "fade",
         animationLoop: true,
         itemMax: 1,
         controlNav: false,
-        slideshowSpeed: 3500,
+        slideshowSpeed: 3000,
         animationSpeed: 600,
         prevText: "",
         nextText: ""

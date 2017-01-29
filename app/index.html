@@ -44,24 +44,26 @@
                 <source src="images/start-video.mp4" type="video/mp4">
             </video>
             <div class="picture-bg"></div>
-            <div class="main-slogan-wrap">
-                <div class="main-slogan">
-                    <div class="main-slogan__top">
-                        ОТ ИДЕИ —
+                <div class="main-slogan-wrap">
+                    <div class="container">
+                        <div class="main-slogan">
+                            <div class="main-slogan__top">
+                               Мобильное приложение открывает 
+                            </div>
+                            <div class="main-slogan__middle">
+                                К СВОБОДЕ УПРАВЛЕНИЯ БИЗНЕСОМ!
+                            </div>
+                            <div class="main-slogan__bottom">
+                                бизнеса, связи с клиентами и пользователями
+                            </div>
+                            <a href="" class="btn" data-toggle="modal" data-target="#free-consultation">получите бесплатную консультацию</a>
+                        </div>
                     </div>
-                    <div class="main-slogan__middle">
-                        К СВОБОДЕ УПРАВЛЕНИЯ БИЗНЕСОМ!
-                    </div>
-                    <div class="main-slogan__bottom">
-                        РАЗРАБОТАЕМ МОБИЛЬНОЕ ПРИЛОЖЕНИЕ ПОД ЛЮБУЮ БИЗНЕС-ЗАДАЧУ!
-                    </div>
-                    <a href="" class="btn" data-toggle="modal" data-target="#free-consultation">получить бесплатную консультацию</a>
                 </div>
-            </div>
         </header>
     </section>
 
-    <section class="slider-laptop">
+    <!--<section class="slider-laptop">
         <div class="container">
             <div class="row">
                 <div class="slider-laptop__items">
@@ -100,7 +102,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <section class="web-app-dev">
         <div class="container">
@@ -129,7 +131,26 @@
             </div>
         </div>
     </section>
-
+    <section class="development">
+        <div class="container">
+            <div class="row">
+                <div class="web-app-dev__plarform">
+                    <div class="web-app-dev__plarform--title title">разработка под все популярные платформы</div>
+                    <div class="web-app-dev__plarformItems center-block text-center">
+                        <div class="web-app-dev__plarformItem">
+                            <img src="images/apple.svg?v=5" alt="">
+                        </div>
+                        <div class="web-app-dev__plarformItem">
+                            <img src="images/android.svg?v=5" alt="">
+                        </div>
+                        <div class="web-app-dev__plarformItem">
+                            <img src="images/win.svg?v=5" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="get-mob-app">
         <div class="container">
             <div class="row">
@@ -186,27 +207,6 @@
                                     </div>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="web-app-dev__plarform">
-                    <div class="web-app-dev__plarform--title title">разработка под все популярные платформы</div>
-                    <div class="web-app-dev__plarformItems center-block text-center">
-                        <div class="web-app-dev__plarformItem">
-                            <img src="images/apple.svg?v=5" alt="">
-                        </div>
-                        <div class="web-app-dev__plarformItem">
-                            <img src="images/android.svg?v=5" alt="">
-                        </div>
-                        <div class="web-app-dev__plarformItem">
-                            <img src="images/win.svg?v=5" alt="">
                         </div>
                     </div>
                 </div>
@@ -338,18 +338,16 @@
                             <form action="" class="center-block text-center">
                                 <div class="col-md-12">
                                     <div class="row">
-                                        <div class="col-md-5 col-md-offset-1">
+                                        <div class="col-md-12">
                                             <input name="nameGuest" type="text" placeholder="Имя" required><br>
                                             <input name="emailGuest" type="email" placeholder="E-mail" required><br>
-                                            <input name="phoneGuest" type="text"  placeholder="Телефон" minlength="6" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}"required><br>
-                                        </div>
-                                        <div class="col-md-5">
+                                            <input name="phoneGuest" type="text"  placeholder="Телефон" minlength="6" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" required><br>
                                             <textarea name="msgTask" placeholder="Краткая постановка задачи/вопрос" required></textarea><br>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <input class="btn text-center" type="submit" value="отправить заявку">
+                                            <input class="btn text-center" type="submit" value="отправьте заявку">
                                         </div>
                                     </div>
                                 </div>
@@ -366,57 +364,64 @@
             <div class="send-msg__title title">
                 что будет после отправки заявки?
             </div>
-            <div class="send-msg__items">
-                <div class="send-msg__item col-md-2">
+            <div class="send-msg__items center-block">
+                <div class="send-msg__item">
                     <div class="send-msg__item--img">
                         <img src="images/send1.svg?v=1" alt="">
                     </div>
                     <div class="send-msg__item--txt">
-                        <span class="send-msg_item--number">1/</span>Мы получаем заявку и проводим с Вами бесплатную консультацию
+                        Мы получаем заявку<br>
+                        и проводим с Вами бесплатную консультацию
                     </div>
                 </div>
-                <div class="send-msg__item col-md-2">
+                <div class="send-msg__item">
                     <div class="send-msg__item--img">
                         <img src="images/send2.svg?v=1" alt="">
                     </div>
                     <div class="send-msg__item--txt">
-                        <span class="send-msg_item--number">2/</span> Погружаемся в Ваш бизнес и помогаем сформировать технические требования к разработке
+                        Погружаемся в Ваш бизнес<br> 
+                        и помогаем сформировать технические требования к разработке
                     </div>
                 </div>
-                <div class="send-msg__item col-md-2">
+                <div class="send-msg__item">
                     <div class="send-msg__item--img">
                         <img src="images/send3.svg?v=1" alt="">
                     </div>
                     <div class="send-msg__item--txt">
-                        <span class="send-msg_item--number">3/</span> Проектируем мобильное приложение для решения Ваших бизнес-задач
+                        Проектируем мобильное приложение<br> 
+                        для решения Ваших бизнес-задач
                     </div>
                 </div>
-                <div class="send-msg__item col-md-2">
+                <div class="send-msg__item">
                     <div class="send-msg__item--img">
                         <img src="images/send4.svg?v=1" alt="">
                     </div>
                     <div class="send-msg__item--txt">
-                        <span class="send-msg_item--number">4/</span> Делаем дизайн — простой, понятный и удобный
+                        Делаем дизайн — <br>
+                        простой, понятный и удобный
                     </div>
                 </div>
-                <div class="send-msg__item col-md-2">
+                <div class="send-msg__item">
                     <div class="send-msg__item--img">
                         <img src="images/send5.svg?v=1" alt="">
                     </div>
                     <div class="send-msg__item--txt">
-                        <span class="send-msg_item--number">5/</span> Тестируем — проводим для Вас полную проверку приложения
+                        Тестируем — <br>
+                        проводим для Вас полную проверку приложения
                     </div>
                 </div>
-                <div class="send-msg__item col-md-2">
+                <div class="send-msg__item">
                     <div class="send-msg__item--img">
-                        <img src="images/send6.png" alt="">
+                        <img src="images/send6.svg" alt="">
                     </div>
                     <div class="send-msg__item--txt">
-                        <span class="send-msg_item--number">6/</span> Осуществляем поддержку — Вы можете быть уверены, что Ваше приложение работает исправно!
+                        Осуществляем поддержку — <br>
+                        Вы можете быть уверены, что Ваше приложение работает исправно!
                     </div>
                 </div>
             </div>
-            <div class="corner"></div>
+        </div>
+        <div class="corner"></div>
         </div>
     </section>
     <section class="support_month">
@@ -513,7 +518,7 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="footer__txt">
+                <div class="footer__txt center-block">
                     <div>ДЕСНОЛ СОФТ</div>            
                     г. Москва, Большой Казенный пер., 1/2, стр. 1, оф. 6        
                     <div><a href="" tel="tel:+7 (495) 933-48-41">+7 (495) 933-48-41</a></div>         
@@ -522,6 +527,7 @@
             </div>
         </div>
     </footer>
+    <section class="bar"></section>
 
     <div class="modal fade" id="free-consultation" tabindex="-1" role="dialog">
         <div class="free-consultation">
@@ -543,7 +549,7 @@
                     <textarea name="msgInPopup"   placeholder="Краткая постановка задачи" required></textarea><br>
                     <div class="free-consultation__item">
                         <div class="free-consultation__item--btn">
-                            <input type="submit"> 
+                            <input type="submit" value="отправьте"> 
                         </div>
                         <div class="free-consultation__item--response">
                             Ответим Вам <br>
