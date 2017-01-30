@@ -8,7 +8,7 @@ $(function () {
     var flag = true;
 
     function Counter() {
-        if (document.body.scrollTop > 4606) {
+        if ( $(window).scrollTop() > 3900 ) {
             while (flag) {
                 $('.counter-number').each(function () {
                     $(this).prop('Counter', 0).animate({
@@ -63,7 +63,7 @@ $(function () {
         animation: "fade",
         animationLoop: true,
         itemMax: 1,
-        controlNav: false,
+        controlNav: true,
         slideshowSpeed: 3000,
         animationSpeed: 600,
         prevText: "",
