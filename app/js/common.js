@@ -38,7 +38,7 @@ $(function () {
      */
     $(window).scrollTop(function () {
 
-        var win = $(window).scrollTop();
+        var win = $(window).scroll();
         if (win < 500) {
             $(".btn-top").hide();
         } else {
