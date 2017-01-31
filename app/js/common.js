@@ -1,4 +1,14 @@
 $(function () {
+
+    /*
+     * Hover 
+    */
+    $(".possibilities-app__item--img").mousemove(function(){
+        $(this).next().css("background-color", "#fff");
+    });
+    $(".possibilities-app__item--img").mouseleave(function(){
+        $(this).next().css("background", "rgba(255, 255, 255, 0.8)");
+    });
     /*
      * Counter
      */
