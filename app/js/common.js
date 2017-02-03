@@ -9,6 +9,7 @@ $(function () {
     $(".possibilities-app__item--img").mouseleave(function(){
         $(this).next().css("background", "rgba(255, 255, 255, 0.8)");
     });
+
     /*
      * Counter
      */
@@ -35,6 +36,27 @@ $(function () {
             }
         }
     }
+
+    var active = 0;
+
+    //$(".video-1c__script").append("<script src='https://www.youtube.com/iframe_api'></script>");
+    
+    $(window).scroll(function(){
+        var win = $(window).scrollTop();
+            //console.log(win);
+        var src = $(".video-1c__start")[0].src;
+        var count = src.indexOf("autoplay=1")+1;
+        
+        if( win > 1400 ){
+            if(count == 0){
+                $('.video-1c__click').click()
+                $(document).on('click', ".video-1c__click", function(ev) {
+                    $(".video-1c__start")[0].src += "&autoplay=1";
+                    ev.preventDefault(); 
+                });
+            }   
+        }
+    })
 
     /*
      * animate class
@@ -110,6 +132,18 @@ $(function () {
     setTimeout(function () {
         $("#free-consultation").modal('show')
     }, 60000);
+
+    /*
+     * Name form
+    */
+     function determinationForm(selector){
+        $(document).on("click", selector, function(){
+            window.formName = $(this).data("name");
+        });
+    }
+    determinationForm(".video-1c.btn");
+    determinationForm(".main-slogan-wrap .btn");
+    determinationForm(".block-form .btn");
     /*
      * Feedback form
      */
@@ -127,8 +161,8 @@ $(function () {
             })
             console.log(cntNotNull);
             if (cntNotNull >= 4) {
-                var dataSend = $(formSend).serialize();
-
+                var dataSend = $(formSend).serialize()+"&formName="+formName;
+                console.log(dataSend);
                 $.post("feedback.php", {
                         "data": dataSend
                     },

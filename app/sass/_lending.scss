@@ -252,7 +252,7 @@ header {
             .web-app-dev__item-img {
                 margin-top: 41px;
                 margin-bottom: 15px;
-                background-position: -116px;
+                background-position: -117px;
             }
         }
         &:nth-child(3) {
@@ -261,6 +261,7 @@ header {
                 margin-top: 40px;
                 margin-bottom: 15px;
                 background-position: -232px;
+                width: 115px;
             }
         }
         &:nth-child(4) {
@@ -311,7 +312,7 @@ header {
 
 .advantage__items {
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 60px;
     .advantage__item {
         .advantage__item--top {
             font: 120px $fnt_rl;
@@ -553,6 +554,25 @@ header {
         margin-top: 14px;
         margin-bottom: 71px;
         font-family: $fnt_rb;
+        &:hover {
+            background: $clr_main2;
+        }
+    }
+}
+
+.video-1c {
+    .title {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .btn {
+        background: $clr_main;
+        margin-top: 40px;
+        font-family: $fnt_rb;
+        max-width: 420px;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
         &:hover {
             background: $clr_main2;
         }
