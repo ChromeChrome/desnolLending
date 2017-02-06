@@ -41,13 +41,14 @@ $(function () {
 
     //$(".video-1c__script").append("<script src='https://www.youtube.com/iframe_api'></script>");
     
-    $(window).scroll(function(){
+    /*$(window).scroll(function(){
         var win = $(window).scrollTop();
             //console.log(win);
         var src = $(".video-1c__start")[0].src;
         var count = src.indexOf("autoplay=1")+1;
         
-        if( win > 1400 ){
+        if( win > 1639 ){
+            console.log("77");
             if(count == 0){
                 $('.video-1c__click').click()
                 $(document).on('click', ".video-1c__click", function(ev) {
@@ -56,7 +57,7 @@ $(function () {
                 });
             }   
         }
-    })
+    })*/
 
     /*
      * animate class
